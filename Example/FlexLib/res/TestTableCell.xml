@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<UIView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" app:flexDirection=" row" app:margin="8" ios:bgColor="white">
+  <UIImageView app:width="40" app:height="40" app:marginLeft="10" app:marginRight="10" ios:source="addnewtype.png"/>
+  <UIView app:flex="1">
+    <UIView app:flexDirection="row">
+      <UILabel ios:name="name" ios:fontSize="14" ios:color="#333333" ios:text="你的名字" ios:linesNum="1"/>
+      <UILabel ios:name="type" app:flex="1" ios:fontSize="14" ios:color="#999999" ios:text="一般类型" ios:linesNum="1"/>
+      <UILabel ios:name="date" ios:fontSize="14" ios:color="#999999" ios:text="5-11" ios:linesNum="1"/>
+    </UIView>
+    <UIView app:height="8"/>
+    <UILabel ios:name="title" ios:fontSize="18" ios:color="#333333" ios:text="title" ios:linesNum="1"/>
+    <UIView app:height="8"/>
+    <!--<FlexTextView layout="minHeight:30,width:100%" attr="fontSize:16,color:#333333"/>-->
+    <UILabel ios:name="content" app:width="100%" ios:fontSize="14" ios:color="#333333" ios:text="aaa" ios:linesNum="0" ios:lineBreakMode="truncatingTail"/>
+    <UIView app:height="8"/>
+  </UIView>
+</UIView>

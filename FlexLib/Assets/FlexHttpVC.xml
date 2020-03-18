@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<UIView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" app:flex="1" ios:bgColor="white">
+  <UIView app:height="40" app:paddingLeft="14" app:paddingRight="14" app:justifyContent="center" ios:bgColor="#f6f6f6">
+    <UITextField ios:name="_pathLabel" ios:fontSize="14" ios:color="#157efb"/>
+  </UIView>
+  <UIView app:height="50" app:paddingLeft="14" app:paddingRight="14" app:flexDirection="row" app:justifyContent="space-around" app:alignItems="center" ios:bgColor="#f6f6f6">
+    <FlexTouchView ios:onPress="onGoUp" app:width="20%" app:height="35" app:justifyContent="center" app:alignItems="center" ios:underlayColor="darkGray" ios:bgColor="#e5e9ea" ios:borderRadius="8">
+      <UILabel ios:fontSize="14" ios:color="#157efb" ios:linesNum="0" ios:text="@goup"/>
+    </FlexTouchView>
+    <FlexTouchView ios:onPress="onGoHome" app:width="20%" app:height="35" app:justifyContent="center" app:alignItems="center" ios:underlayColor="darkGray" ios:bgColor="#e5e9ea" ios:borderRadius="8">
+      <UILabel ios:fontSize="14" ios:color="#157efb" ios:linesNum="0" ios:text="@gohome"/>
+    </FlexTouchView>
+    <FlexTouchView ios:onPress="onRefresh" app:width="20%" app:height="35" app:justifyContent="center" app:alignItems="center" ios:underlayColor="darkGray" ios:bgColor="#e5e9ea" ios:borderRadius="8">
+      <UILabel ios:fontSize="14" ios:color="#157efb" ios:linesNum="0" ios:text="@refresh"/>
+    </FlexTouchView>
+    <FlexTouchView ios:onPress="onSetting" app:width="20%" app:height="35" app:justifyContent="center" app:alignItems="center" ios:underlayColor="darkGray" ios:bgColor="#e5e9ea" ios:borderRadius="8">
+      <UILabel ios:fontSize="14" ios:color="#157efb" ios:linesNum="0" ios:text="@setting"/>
+    </FlexTouchView>
+  </UIView>
+  <UITableView ios:name="_table" app:flex="1" ios:bgColor="white"/>
+  <UIView app:height="40" app:paddingLeft="14" app:paddingRight="14" app:justifyContent="center" ios:bgColor="#f6f6f6">
+    <UILabel ios:name="_statusBar" ios:fontSize="14" ios:color="#157efb" ios:linesNum="0" ios:text="空闲!"/>
+  </UIView>
+</UIView>

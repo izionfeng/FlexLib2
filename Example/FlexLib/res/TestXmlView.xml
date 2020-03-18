@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TestXmlView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" app:flex="1" app:margin="10" ios:bgColor="green" ios:borderColor="red" ios:borderWidth="1" ios:borderRadius="5">
+  <UILabel ios:fontSize="16" ios:color="#333333" ios:linesNum="0" ios:text="这是一个基于FlexXmlBaseView的组件，只能使用在xml中，可以减少视图层级"/>
+  <FlexContainerView ios:name="_attachParent" app:marginTop="5" app:marginBottom="5" app:alignItems="center"/>
+  <FlexTouchView ios:onPress="onAddAttachment" ios:underlayColor="#e5e5e5">
+    <UIImageView ios:source="select.png"/>
+  </FlexTouchView>
+</TestXmlView>

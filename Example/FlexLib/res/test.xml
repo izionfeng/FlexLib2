@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<UIView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" app:flex="1" app:flexDirection="row" app:alignItems="center" ios:bgColor="white">
+  <UIView app:width="100%">
+    <UILabel app:width="100%" app:marginBottom="50" ios:fontSize="16" ios:color="#999999" ios:textAlign="center" ios:text="快速发起"/>
+    <UIView app:width="100%" app:flexDirection="row" app:justifyContent="space-between" app:paddingLeft="80" app:paddingRight="80" app:paddingBottom="100">
+      <UIView ios:name="add" ios:onPress="tapAddAction" app:alignItems=" center">
+        <UIImageView ios:source="addnewtype.png"/>
+        <UILabel app:marginTop=" 20" ios:textAlign=" center" ios:fontSize=" 14" ios:color=" #666666" ios:text="添加类别"/>
+      </UIView>
+      <UIView ios:name="batch" ios:onPress="tapBatchAction" app:alignItems=" center">
+        <UIImageView ios:source="batchcheck.png"/>
+        <UILabel app:marginTop=" 20" ios:textAlign=" center" ios:fontSize=" 14" ios:color=" #666666" ios:text="批量出库"/>
+      </UIView>
+    </UIView>
+  </UIView>
+</UIView>

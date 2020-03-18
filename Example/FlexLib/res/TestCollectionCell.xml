@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<UIView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" app:flex="1" app:alignItems="center">
+  <UIImageView ios:name="image" app:width="40" app:height="40" ios:source="addnewtype.png"/>
+  <UILabel ios:name="label" ios:fontSize="14" ios:color="#333333" ios:linesNum="1" ios:text="标签"/>
+</UIView>

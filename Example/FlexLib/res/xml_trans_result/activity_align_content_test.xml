@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="ZFFlexLayout.git" xmlns:tools="http://schemas.android.com/tools">
+  <TextView/>
+  <TextView/>
+  <TextView/>
+</com.google.android.flexbox.FlexboxLayout>

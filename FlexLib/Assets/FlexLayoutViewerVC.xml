@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<UITableView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" ios:name="_table" app:flex="1" ios:bgColor="white"/>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FlexScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" app:flex="1" app:width="100%" app:padding="14" ios:bgColor="white" ios:vertScroll="true" ios:horzIndicator="false" ios:vertIndicator="true">
+  <UIView app:flexDirection="row" app:alignItems="center">
+    <UIView app:flex="1">
+      <UILabel ios:fontSize="16" ios:color="#333333" ios:text="@baseUrlPrompt"/>
+      <UIView app:height="5"/>
+      <UITextField ios:name="_baseUrlField" app:width="100%" app:height="40" ios:fontSize="16" ios:color="#333333" ios:placeHolder="@baseUrlPlaceHolder"/>
+    </UIView>
+  </UIView>
+  <UIView app:height="1" ios:bgColor="#e5e5e5"/>
+  <UIView app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center" app:marginTop="10" app:marginBottom="10">
+    <UILabel ios:fontSize="16" ios:color="#333333" ios:text="@onlineLoad"/>
+    <UISwitch ios:name="_loadSwitch" ios:on="true"/>
+  </UIView>
+  <UILabel ios:name="_warning" app:marginBottom="10" ios:fontSize="16" ios:color="red" ios:linesNum="0" ios:text="@onlineWarning"/>
+  <UIView app:height="1" ios:bgColor="#e5e5e5"/>
+  <UIView app:flexDirection="row" app:justifyContent="space-around" app:alignItems="center" app:marginTop="30" app:marginBottom="10">
+    <!--<FlexTouchView onPress="onTestHttp" layout="width:40%,height:40,alignItems:center,justifyContent:center" attr="bgColor:#47b0f9,activeOpacity:0.5,borderRadius:4">
+         <UILabel attr="fontSize:16,color:white,text:Test Http"/>
+         </FlexTouchView>-->
+    <FlexTouchView ios:onPress="onSave" app:width="80%" app:height="40" app:alignItems="center" app:justifyContent="center" ios:bgColor="#47b0f9" ios:activeOpacity="0.5" ios:borderRadius="4">
+      <UILabel ios:fontSize="16" ios:color="white" ios:text="@Save"/>
+    </FlexTouchView>
+  </UIView>
+  <UIView app:height="50"/>
+  <UILabel ios:fontSize="16" ios:color="#333333" ios:text="@flexIndexFeature" ios:linesNum="0"/>
+  <UIView app:height="20"/>
+  <FlexTouchView ios:onPress="onCreateIndex" app:width="80%" app:height="40" app:alignItems="center" app:justifyContent="center" app:alignSelf="center" ios:bgColor="#47b0f9" ios:activeOpacity="0.5" ios:borderRadius="4">
+    <UILabel ios:fontSize="16" ios:color="white" ios:text="@createFlexIndex"/>
+  </FlexTouchView>
+  <UIProgressView ios:name="_progress" app:width="80%" app:marginTop="20" app:alignSelf="center" ios:hidden="true" ios:progressTintColor="red" ios:trackTintColor="lightGray"/>
+</FlexScrollView>

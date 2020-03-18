@@ -1,0 +1,2028 @@
+{
+	// attribute
+	"name":{
+		"prefix": "name",
+		"body": [
+			"name",
+		],
+	},
+	"layout":{
+		"prefix": "layout",
+		"body": [
+			"layout",
+		],
+	},
+	"attr":{
+		"prefix": "attr",
+		"body": [
+			"attr",
+		],
+	},
+	"onPress":{
+		"prefix": "onPress",
+		"body": [
+			"onPress",
+		],
+	},
+
+	// uikit views
+	"UIView_":{
+		"prefix": "UIView",
+		"body": [
+			"UIView",
+		],
+	},
+	"FlexTouchView_":{
+		"prefix": "FlexTouchView",
+		"body": [
+			"FlexTouchView",
+		],
+	},
+	"FlexScrollView_":{
+		"prefix": "FlexScrollView",
+		"body": [
+			"FlexScrollView",
+		],
+	},
+	"FlexCollectionView_":{
+		"prefix": "FlexCollectionView",
+		"body": [
+			"FlexCollectionView",
+		],
+	},
+	"UILabel_":{
+		"prefix": "UILabel",
+		"body": [
+			"UILabel",
+		],
+	},
+	"UITableView_":{
+		"prefix": "UITableView",
+		"body": [
+			"UITableView",
+		],
+	},
+	"UICollectionView_":{
+		"prefix": "UICollectionView",
+		"body": [
+			"UICollectionView",
+		],
+	},
+	"UIButton_":{
+		"prefix": "UIButton",
+		"body": [
+			"UIButton",
+		],
+	},
+	"UIImageView_":{
+		"prefix": "UIImageView",
+		"body": [
+			"UIImageView",
+		],
+	},
+	"UIScrollView_":{
+		"prefix": "UIScrollView",
+		"body": [
+			"UIScrollView",
+		],
+	},
+	"UITextField_":{
+		"prefix": "UITextField",
+		"body": [
+			"UITextField",
+		],
+	},
+	"UITextView_":{
+		"prefix": "UITextView",
+		"body": [
+			"UITextView",
+		],
+	},
+	"FlexTextView_":{
+		"prefix": "FlexTextView",
+		"body": [
+			"FlexTextView",
+		],
+	},
+	"UIActivityIndicatorView_":{
+		"prefix": "UIActivityIndicatorView",
+		"body": [
+			"UIActivityIndicatorView",
+		],
+	},
+	"UIDatePicker_":{
+		"prefix": "UIDatePicker",
+		"body": [
+			"UIDatePicker",
+		],
+	},
+	"UIPageControl_":{
+		"prefix": "UIPageControl",
+		"body": [
+			"UIPageControl",
+		],
+	},
+	"UIPickerView_":{
+		"prefix": "UIPickerView",
+		"body": [
+			"UIPickerView",
+		],
+	},
+	"UIProgressView_":{
+		"prefix": "UIProgressView",
+		"body": [
+			"UIProgressView",
+		],
+	},
+	"UISearchBar_":{
+		"prefix": "UISearchBar",
+		"body": [
+			"UISearchBar",
+		],
+	},
+	"UISegmentedControl_":{
+		"prefix": "UISegmentedControl",
+		"body": [
+			"UISegmentedControl",
+		],
+	},
+	"UISlider_":{
+		"prefix": "UISlider",
+		"body": [
+			"UISlider",
+		],
+	},
+	"UIStepper_":{
+		"prefix": "UIStepper",
+		"body": [
+			"UIStepper",
+		],
+	},
+	"UISwitch_":{
+		"prefix": "UISwitch",
+		"body": [
+			"UISwitch",
+		],
+	},
+	"UITabBar_":{
+		"prefix": "UITabBar",
+		"body": [
+			"UITabBar",
+		],
+	},
+	"UIToolbar_":{
+		"prefix": "UIToolbar",
+		"body": [
+			"UIToolbar",
+		],
+	},
+	"WKWebView_":{
+		"prefix": "WKWebView",
+		"body": [
+			"WKWebView",
+		],
+	},
+	
+
+	// view
+	"UIView":{
+		"prefix": "view",
+		"body": [
+			"<UIView layout=\"\" attr=\"\">",
+			"",
+			"</UIView>",
+		],
+		"description": "UIView element"
+	},
+	"UILabel":{
+		"prefix": "label",
+		"body": [
+			"<UILabel name=\"\" layout=\"\" attr=\"fontSize:14,color:#333333,lineBreakMode:truncatingTail,linesNum:1,text:\"/>",
+		],
+		"description": "UIView element"
+	},
+	"FlexTouchView":{
+		"prefix": "touchView",
+		"body": [
+			"<FlexTouchView onPress=\"\" layout=\"\" attr=\"underlayColor:darkGray,bgColor:lightGray\">",
+			"",
+			"</FlexTouchView>",
+		],
+		"description": "FlexTouchView element"
+	},
+	"UITableView":{
+		"prefix": "tableView",
+		"body": [
+			"<UITableView name=\"\" layout=\"\" attr=\"\"/>",
+		],
+		"description": "UITableView element"
+	},
+	"FlexCollectionView":{
+		"prefix": "collectionView",
+		"body": [
+			"<FlexCollectionView name=\"\" layout=\"\" attr=\"\"/>",
+		],
+		"description": "FlexCollectionView element"
+	},
+	"FlexScrollView":{
+		"prefix": "scrollView",
+		"body": [
+			"<FlexScrollView layout=\"flex:1\" attr=\"vertScroll:true\">",
+			"",
+			"</FlexScrollView>",
+		],
+		"description": "FlexScrollView element"
+	},
+	"FlexContainerView":{
+		"prefix": "containerView",
+		"body": [
+			"<FlexContainerView name=\"\" layout=\"\">",
+			"",
+			"</FlexContainerView>",
+		],
+		"description": "FlexContainerView element"
+	},
+	"UIImageView":{
+		"prefix": "imageView",
+		"body": [
+			"<UIImageView attr=\"source:\"/>",
+		],
+		"description": "UIImageView element"
+	},
+	"UITextField":{
+		"prefix": "textField",
+		"body": [
+			"<UITextField name=\"\" layout=\"\" attr=\"fontSize:14,color:black,textAlign:left,placeholder:,text:\"/>",
+		],
+		"description": "UITextField element"
+	},
+	"FlexTextView":{
+		"prefix": "textView",
+		"body": [
+			"<FlexTextView name=\"\" layout=\"\" attr=\"fontSize:14,color:black,textAlign:left\"/>",
+		],
+		"description": "FlexTextView element"
+	},
+	"UIActivityIndicatorView":{
+		"prefix": "activityIndicatorView",
+		"body": [
+			"<UIActivityIndicatorView name=\"\" layout=\"\" attr=\"\"/>",
+		],
+		"description": "UIActivityIndicatorView element"
+	},
+	"UIDatePicker":{
+		"prefix": "datePicker",
+		"body": [
+			"<UIDatePicker name=\"\" layout=\"\" attr=\"\"/>",
+		],
+		"description": "UIDatePicker element"
+	},
+	"UIProgressView":{
+		"prefix": "progressView",
+		"body": [
+			"<UIProgressView name=\"\" layout=\"\" attr=\"\"/>",
+		],
+		"description": "UIProgressView element"
+	},
+	"UIPageControl":{
+		"prefix": "pageControl",
+		"body": [
+			"<UIPageControl name=\"\" layout=\"\" attr=\"\"/>",
+		],
+		"description": "UIPageControl element"
+	},
+	"UIPickerView":{
+		"prefix": "pickerView",
+		"body": [
+			"<UIPickerView name=\"\" layout=\"\" attr=\"\"/>",
+		],
+		"description": "UIPickerView element"
+	},
+	"UISearchBar":{
+		"prefix": "searchBar",
+		"body": [
+			"<UISearchBar name=\"\" layout=\"\" attr=\"\"/>",
+		],
+		"description": "UISearchBar element"
+	},
+	"UISegmentedControl":{
+		"prefix": "segmentedControl",
+		"body": [
+			"<UISegmentedControl name=\"\" layout=\"\" attr=\"\"/>",
+		],
+		"description": "UISegmentedControl element"
+	},
+	"UISlider":{
+		"prefix": "slider",
+		"body": [
+			"<UISlider name=\"\" layout=\"\" attr=\"\"/>",
+		],
+		"description": "UISlider element"
+	},
+	"UIStepper":{
+		"prefix": "stepper",
+		"body": [
+			"<UIStepper name=\"\" layout=\"\" attr=\"\"/>",
+		],
+		"description": "UIStepper element"
+	},
+	"UISwitch":{
+		"prefix": "switch",
+		"body": [
+			"<UISwitch name=\"\" layout=\"\" attr=\"on:false\"/>",
+		],
+		"description": "UISwitch element"
+	},
+	"UITabBar":{
+		"prefix": "tabbar",
+		"body": [
+			"<UITabBar name=\"\" layout=\"\" attr=\"\"/>",
+		],
+		"description": "UITabBar element"
+	},
+	"UIToolbar":{
+		"prefix": "toolbar",
+		"body": [
+			"<UIToolbar name=\"\" layout=\"\" attr=\"\"/>",
+		],
+		"description": "UIToolbar element"
+	},
+
+	// flex attribute
+	"direction":{
+		"prefix": "direction",
+		"body": [
+			"direction",
+		],
+	},
+	"flexDirection":{
+		"prefix": "flexDirection",
+		"body": [
+			"flexDirection",
+		],
+	},
+	"justifyContent":{
+		"prefix": "justifyContent",
+		"body": [
+			"justifyContent",
+		],
+	},
+	"alignContent":{
+		"prefix": "alignContent",
+		"body": [
+			"alignContent",
+		],
+	},
+	"alignItems":{
+		"prefix": "alignItems",
+		"body": [
+			"alignItems",
+		],
+	},
+	"alignSelf":{
+		"prefix": "alignSelf",
+		"body": [
+			"alignSelf",
+		],
+	},
+	"position":{
+		"prefix": "position",
+		"body": [
+			"position",
+		],
+	},
+	"flexWrap":{
+		"prefix": "flexWrap",
+		"body": [
+			"flexWrap",
+		],
+	},
+	"overflow":{
+		"prefix": "overflow",
+		"body": [
+			"overflow",
+		],
+	},
+
+	// layout numbers
+	"flex":{
+		"prefix": "flex",
+		"body": [
+			"flex",
+		],
+	},
+	"flexGrow":{
+		"prefix": "flexGrow",
+		"body": [
+			"flexGrow",
+		],
+	},
+	"flexShrink":{
+		"prefix": "flexShrink",
+		"body": [
+			"flexShrink",
+		],
+	},
+	"aspectRatio":{
+		"prefix": "aspectRatio",
+		"body": [
+			"aspectRatio",
+		],
+	},
+	"borderWidth":{
+		"prefix": "borderWidth",
+		"body": [
+			"borderWidth",
+		],
+	},
+	"width":{
+		"prefix": "width",
+		"body": [
+			"width",
+		],
+	},
+	"height":{
+		"prefix": "height",
+		"body": [
+			"height",
+		],
+	},
+	"minWidth":{
+		"prefix": "minWidth",
+		"body": [
+			"minWidth",
+		],
+	},
+	"minHeight":{
+		"prefix": "minHeight",
+		"body": [
+			"minHeight",
+		],
+	},
+	"maxWidth":{
+		"prefix": "maxWidth",
+		"body": [
+			"maxWidth",
+		],
+	},
+	"maxHeight":{
+		"prefix": "maxHeight",
+		"body": [
+			"maxHeight",
+		],
+	},
+	"left":{
+		"prefix": "left",
+		"body": [
+			"left",
+		],
+	},
+	"top":{
+		"prefix": "top",
+		"body": [
+			"top",
+		],	
+	},
+	"right":{
+		"prefix": "right",
+		"body": [
+			"right",
+		],
+	},
+	"bottom":{
+		"prefix": "bottom",
+		"body": [
+			"bottom",
+		],
+	},
+	"start":{
+		"prefix": "start",
+		"body": [
+			"start",
+		],
+	},
+	"end":{
+		"prefix": "end",
+		"body": [
+			"end",
+		],
+	},
+	"margin":{
+		"prefix": "margin",
+		"body": [
+			"margin",
+		],
+	},
+	"marginLeft":{
+		"prefix": "marginLeft",
+		"body": [
+			"marginLeft",
+		],
+	},
+	"marginTop":{
+		"prefix": "marginTop",
+		"body": [
+			"marginTop",
+		],
+	},
+	"marginRight":{
+		"prefix": "marginRight",
+		"body": [
+			"marginRight",
+		],
+	},
+	"marginBottom":{
+		"prefix": "marginBottom",
+		"body": [
+			"marginBottom",
+		],
+	},
+	"paddingLeft":{
+		"prefix": "paddingLeft",
+		"body": [
+			"paddingLeft",
+		],
+	},
+	"paddingTop":{
+		"prefix": "paddingTop",
+		"body": [
+			"paddingTop",
+		],
+	},
+	"paddingRight":{
+		"prefix": "paddingRight",
+		"body": [
+			"paddingRight",
+		],
+	},
+	"paddingBottom":{
+		"prefix": "paddingBottom",
+		"body": [
+			"paddingBottom",
+		],
+	},
+	"padding":{
+		"prefix": "padding",
+		"body": [
+			"padding",
+		],
+	},
+
+	// view attributes
+	"bgColor":{
+		"prefix": "bgColor",
+		"body": [
+			"bgColor",
+		],
+	},
+	"linesNum":{
+		"prefix": "linesNum",
+		"body": [
+			"linesNum",
+		],
+		"description": "number of lines"
+	},
+	"borderColor":{
+		"prefix": "borderColor",
+		"body": [
+			"borderColor",
+		],
+	},
+	"borderWidth":{
+		"prefix": "borderWidth",
+		"body": [
+			"borderWidth",
+		],
+	},
+	"borderRadius":{
+		"prefix": "borderRadius",
+		"body": [
+			"borderRadius",
+		],
+	},
+	"shadowOffset":{
+		"prefix": "shadowOffset",
+		"body": [
+			"shadowOffset",
+		],
+	},
+	"shadowRadius":{
+		"prefix": "shadowRadius",
+		"body": [
+			"shadowRadius",
+		],
+	},
+	"shadowColor":{
+		"prefix": "shadowColor",
+		"body": [
+			"shadowColor",
+		],
+	},
+	"contentMode":{
+		"prefix": "contentMode",
+		"body": [
+			"contentMode",
+		],
+	},
+	"alpha":{
+		"prefix": "alpha",
+		"body": [
+			"alpha",
+		],
+	},
+	"tag":{
+		"prefix": "tag",
+		"body": [
+			"tag",
+		],
+	},
+	"hidden":{
+		"prefix": "hidden",
+		"body": [
+			"hidden",
+		],
+	},
+	"clipsToBounds":{
+		"prefix": "clipsToBounds",
+		"body": [
+			"clipsToBounds",
+		],
+	},
+	"tintColor":{
+		"prefix": "tintColor",
+		"body": [
+			"tintColor",
+		],
+	},
+	"stickTop":{
+		"prefix": "stickTop",
+		"body": [
+			"stickTop",
+		],
+	},
+	"underlayColor":{
+		"prefix": "underlayColor",
+		"body": [
+			"underlayColor",
+		],
+	},
+	"activeOpacity":{
+		"prefix": "activeOpacity",
+		"body": [
+			"activeOpacity",
+		],
+	},
+	"horzScroll":{
+		"prefix": "horzScroll",
+		"body": [
+			"horzScroll",
+		],
+	},
+	"vertScroll":{
+		"prefix": "vertScroll",
+		"body": [
+			"vertScroll",
+		],
+	},
+	"text":{
+		"prefix": "text",
+		"body": [
+			"text",
+		],
+	},
+	"fontSize":{
+		"prefix": "fontSize",
+		"body": [
+			"fontSize",
+		],
+	},
+	"color":{
+		"prefix": "color",
+		"body": [
+			"color",
+		],
+	},
+	"textAlign":{
+		"prefix": "textAlign",
+		"body": [
+			"textAlign",
+		],
+	},
+	"highlightTextColor":{
+		"prefix": "highlightTextColor",
+		"body": [
+			"highlightTextColor",
+		],
+	},
+	"interactEnable":{
+		"prefix": "interactEnable",
+		"body": [
+			"interactEnable",
+		],
+	},
+	"adjustFontSize":{
+		"prefix": "adjustFontSize",
+		"body": [
+			"adjustFontSize",
+		],
+	},
+	"enabled":{
+		"prefix": "enabled",
+		"body": [
+			"enabled",
+		],
+	},
+	"selected":{
+		"prefix": "selected",
+		"body": [
+			"selected",
+		],
+	},
+	"highlighted":{
+		"prefix": "highlighted",
+		"body": [
+			"highlighted",
+		],
+	},
+	"vertAlignment":{
+		"prefix": "vertAlignment",
+		"body": [
+			"vertAlignment",
+		],
+	},
+	"horzAlignment":{
+		"prefix": "horzAlignment",
+		"body": [
+			"horzAlignment",
+		],
+	},
+	"title":{
+		"prefix": "title",
+		"body": [
+			"title",
+		],
+	},
+	"source":{
+		"prefix": "source",
+		"body": [
+			"source",
+		],
+	},
+	"highlightSource":{
+		"prefix": "highlightSource",
+		"body": [
+			"highlightSource",
+		],
+	},
+	"horzIndicator":{
+		"prefix": "horzIndicator",
+		"body": [
+			"horzIndicator",
+		],
+	},
+	"vertIndicator":{
+		"prefix": "vertIndicator",
+		"body": [
+			"vertIndicator",
+		],
+	},
+	"pageEnabled":{
+		"prefix": "pageEnabled",
+		"body": [
+			"pageEnabled",
+		],
+	},
+	"scrollEnabled":{
+		"prefix": "scrollEnabled",
+		"body": [
+			"scrollEnabled",
+		],
+	},
+	"bounces":{
+		"prefix": "bounces",
+		"body": [
+			"bounces",
+		],
+	},
+	"indicatorStyle":{
+		"prefix": "indicatorStyle",
+		"body": [
+			"indicatorStyle",
+		],
+	},
+	"pickerMode":{
+		"prefix": "pickerMode",
+		"body": [
+			"pickerMode",
+		],
+	},
+	"numberOfPages":{
+		"prefix": "numberOfPages",
+		"body": [
+			"numberOfPages",
+		],
+	},
+	"currentPage":{
+		"prefix": "currentPage",
+		"body": [
+			"currentPage",
+		],
+	},
+	"hidesForSinglePage":{
+		"prefix": "hidesForSinglePage",
+		"body": [
+			"hidesForSinglePage",
+		],
+	},
+	"pageTintColor":{
+		"prefix": "pageTintColor",
+		"body": [
+			"pageTintColor",
+		],
+	},
+	"curPageTintColor":{
+		"prefix": "curPageTintColor",
+		"body": [
+			"curPageTintColor",
+		],
+	},
+	"showSelIndicator":{
+		"prefix": "showSelIndicator",
+		"body": [
+			"showSelIndicator",
+		],
+	},
+	"style":{
+		"prefix": "style",
+		"body": [
+			"style",
+		],
+	},
+	"progress":{
+		"prefix": "progress",
+		"body": [
+			"progress",
+		],
+	},
+	"progressTintColor":{
+		"prefix": "progressTintColor",
+		"body": [
+			"progressTintColor",
+		],
+	},
+	"trackTintColor":{
+		"prefix": "trackTintColor",
+		"body": [
+			"trackTintColor",
+		],
+	},
+	"barStyle":{
+		"prefix": "barStyle",
+		"body": [
+			"barStyle",
+		],
+	},
+	"prompt":{
+		"prefix": "prompt",
+		"body": [
+			"prompt",
+		],
+	},
+	"placeholder":{
+		"prefix": "placeholder",
+		"body": [
+			"placeholder",
+		],
+	},
+	"bookMarkBtn":{
+		"prefix": "bookMarkBtn",
+		"body": [
+			"bookMarkBtn",
+		],
+	},
+	"cancelBtn":{
+		"prefix": "cancelBtn",
+		"body": [
+			"cancelBtn",
+		],
+	},
+	"resultBtn":{
+		"prefix": "resultBtn",
+		"body": [
+			"resultBtn",
+		],
+	},
+	"resultBtnSelected":{
+		"prefix": "resultBtnSelected",
+		"body": [
+			"resultBtnSelected",
+		],
+	},
+	"selectedIndex":{
+		"prefix": "selectedIndex",
+		"body": [
+			"selectedIndex",
+		],
+	},
+	"value":{
+		"prefix": "value",
+		"body": [
+			"value",
+		],
+	},
+	"minValue":{
+		"prefix": "minValue",
+		"body": [
+			"minValue",
+		],
+	},
+	"maxValue":{
+		"prefix": "maxValue",
+		"body": [
+			"maxValue",
+		],
+	},
+	"continuous":{
+		"prefix": "continuous",
+		"body": [
+			"continuous",
+		],
+	},
+	"minTintColor":{
+		"prefix": "minTintColor",
+		"body": [
+			"minTintColor",
+		],
+	},
+	"maxTintColor":{
+		"prefix": "maxTintColor",
+		"body": [
+			"maxTintColor",
+		],
+	},
+	"thumbTintColor":{
+		"prefix": "thumbTintColor",
+		"body": [
+			"thumbTintColor",
+		],
+	},
+	"stepValue":{
+		"prefix": "stepValue",
+		"body": [
+			"stepValue",
+		],
+	},
+	"autorepeat":{
+		"prefix": "autorepeat",
+		"body": [
+			"autorepeat",
+		],
+	},
+	"wraps":{
+		"prefix": "wraps",
+		"body": [
+			"wraps",
+		],
+	},
+	"onTintColor":{
+		"prefix": "onTintColor",
+		"body": [
+			"onTintColor",
+		],
+	},
+	"barTintColor":{
+		"prefix": "barTintColor",
+		"body": [
+			"barTintColor",
+		],
+	},
+	"unSelTintColor":{
+		"prefix": "unSelTintColor",
+		"body": [
+			"unSelTintColor",
+		],
+	},
+	"itemPosition":{
+		"prefix": "itemPosition",
+		"body": [
+			"itemPosition",
+		],
+	},
+	"itemSpacing":{
+		"prefix": "itemSpacing",
+		"body": [
+			"itemSpacing",
+		],
+	},
+	"itemWidth":{
+		"prefix": "itemWidth",
+		"body": [
+			"itemWidth",
+		],
+	},
+	"translucent":{
+		"prefix": "translucent",
+		"body": [
+			"translucent",
+		],
+	},
+
+
+	// attribute values
+
+	"true":{
+		"prefix": "true",
+		"body": [
+			"true",
+		],
+	},
+	"false":{
+		"prefix": "false",
+		"body": [
+			"false",
+		],
+	},
+	"flex-start":{
+		"prefix": "flex-start",
+		"body": [
+			"flex-start",
+		],
+	},
+	"center":{
+		"prefix": "center",
+		"body": [
+			"center",
+		],
+	},
+	"flex-end":{
+		"prefix": "flex-end",
+		"body": [
+			"flex-end",
+		],
+	},
+	"space-between":{
+		"prefix": "space-between",
+		"body": [
+			"space-between",
+		],
+	},
+	"space-around":{
+		"prefix": "space-around",
+		"body": [
+			"space-around",
+		],
+	},
+	"space-evenly":{
+		"prefix": "space-evenly",
+		"body": [
+			"space-evenly",
+		],
+	},
+	"inherit":{
+		"prefix": "inherit",
+		"body": [
+			"inherit",
+		],
+	},
+	"ltr":{
+		"prefix": "ltr",
+		"body": [
+			"ltr",
+		],
+	},
+	"rtl":{
+		"prefix": "rtl",
+		"body": [
+			"rtl",
+		],
+	},
+	"col":{
+		"prefix": "col",
+		"body": [
+			"col",
+		],
+	},
+	"row":{
+		"prefix": "row",
+		"body": [
+			"row",
+		],
+	},
+	"col-reverse":{
+		"prefix": "col-reverse",
+		"body": [
+			"col-reverse",
+		],
+	},
+	"row-reverse":{
+		"prefix": "row-reverse",
+		"body": [
+			"row-reverse",
+		],
+	},
+	"auto":{
+		"prefix": "auto",
+		"body": [
+			"auto",
+		],
+	},
+	"stretch":{
+		"prefix": "stretch",
+		"body": [
+			"stretch",
+		],
+	},
+	"baseline":{
+		"prefix": "baseline",
+		"body": [
+			"baseline",
+		],
+	},
+	"relative":{
+		"prefix": "relative",
+		"body": [
+			"relative",
+		],
+	},
+	"absolute":{
+		"prefix": "absolute",
+		"body": [
+			"absolute",
+		],
+	},
+	"no-wrap":{
+		"prefix": "no-wrap",
+		"body": [
+			"no-wrap",
+		],
+	},
+	"wrap":{
+		"prefix": "wrap",
+		"body": [
+			"wrap",
+		],
+	},
+	"wrap-reverse":{
+		"prefix": "wrap-reverse",
+		"body": [
+			"wrap-reverse",
+		],
+	},
+	"visible":{
+		"prefix": "visible",
+		"body": [
+			"visible",
+		],
+	},
+
+	// colors
+
+	"black":{
+		"prefix": "black",
+		"body": [
+			"black",
+		],
+	},
+	"white":{
+		"prefix": "white",
+		"body": [
+			"white",
+		],
+	},
+	"clear":{
+		"prefix": "clear",
+		"body": [
+			"clear",
+		],
+	},
+	"darkGray":{
+		"prefix": "darkGray",
+		"body": [
+			"darkGray",
+		],
+	},
+	"lightGray":{
+		"prefix": "lightGray",
+		"body": [
+			"lightGray",
+		],
+	},
+	"gray":{
+		"prefix": "gray",
+		"body": [
+			"gray",
+		],
+	},
+	"red":{
+		"prefix": "red",
+		"body": [
+			"red",
+		],
+	},
+	"green":{
+		"prefix": "green",
+		"body": [
+			"green",
+		],
+	},
+	"blue":{
+		"prefix": "blue",
+		"body": [
+			"blue",
+		],
+	},
+	"cyan":{
+		"prefix": "cyan",
+		"body": [
+			"cyan",
+		],
+	},
+	"yellow":{
+		"prefix": "yellow",
+		"body": [
+			"yellow",
+		],
+	},
+	"magenta":{
+		"prefix": "magenta",
+		"body": [
+			"magenta",
+		],
+	},
+	"orange":{
+		"prefix": "orange",
+		"body": [
+			"orange",
+		],
+	},
+	"purple":{
+		"prefix": "purple",
+		"body": [
+			"purple",
+		],
+	},
+	"brown":{
+		"prefix": "brown",
+		"body": [
+			"brown",
+		],
+	},
+
+	// other enumerations
+
+	"scaleToFill":{
+		"prefix": "scaleToFill",
+		"body": [
+			"scaleToFill",
+		],
+	},
+	"scaleAspectFit":{
+		"prefix": "scaleAspectFit",
+		"body": [
+			"scaleAspectFit",
+		],
+	},
+	"scaleAspectFill":{
+		"prefix": "scaleAspectFill",
+		"body": [
+			"scaleAspectFill",
+		],
+	},
+	"redraw":{
+		"prefix": "redraw",
+		"body": [
+			"redraw",
+		],
+	},
+	"topLeft":{
+		"prefix": "topLeft",
+		"body": [
+			"topLeft",
+		],
+	},
+	"topRight":{
+		"prefix": "topRight",
+		"body": [
+			"topRight",
+		],
+	},
+	"bottomLeft":{
+		"prefix": "bottomLeft",
+		"body": [
+			"bottomLeft",
+		],
+	},
+	"bottomRight":{
+		"prefix": "bottomRight",
+		"body": [
+			"bottomRight",
+		],
+	},
+	"lineBreakMode":{
+		"prefix": "lineBreakMode",
+		"body": [
+			"lineBreakMode",
+		],
+	},
+	"wordWrapping":{
+		"prefix": "wordWrapping",
+		"body": [
+			"wordWrapping",
+		],
+	},
+	"charWrapping":{
+		"prefix": "charWrapping",
+		"body": [
+			"charWrapping",
+		],
+	},
+	"clipping":{
+		"prefix": "clipping",
+		"body": [
+			"clipping",
+		],
+	},
+	"truncatingHead":{
+		"prefix": "truncatingHead",
+		"body": [
+			"truncatingHead",
+		],
+	},
+	"truncatingTail":{
+		"prefix": "truncatingTail",
+		"body": [
+			"truncatingTail",
+		],
+	},
+	"truncatingMiddle":{
+		"prefix": "truncatingMiddle",
+		"body": [
+			"truncatingMiddle",
+		],
+	},
+	"justified":{
+		"prefix": "justified",
+		"body": [
+			"justified",
+		],
+	},
+	"natural":{
+		"prefix": "natural",
+		"body": [
+			"natural",
+		],
+	},
+	"fill":{
+		"prefix": "fill",
+		"body": [
+			"fill",
+		],
+	},
+	"default":{
+		"prefix": "default",
+		"body": [
+			"default",
+		],
+	},
+	"bezel":{
+		"prefix": "bezel",
+		"body": [
+			"bezel",
+		],
+	},
+	"roundRect":{
+		"prefix": "roundRect",
+		"body": [
+			"roundRect",
+		],
+	},
+	"line":{
+		"prefix": "line",
+		"body": [
+			"line",
+		],
+	},
+	"none":{
+		"prefix": "none",
+		"body": [
+			"none",
+		],
+	},
+	"whiteLarge":{
+		"prefix": "whiteLarge",
+		"body": [
+			"whiteLarge",
+		],
+	},
+	"time":{
+		"prefix": "time",
+		"body": [
+			"time",
+		],
+	},
+	"date":{
+		"prefix": "date",
+		"body": [
+			"date",
+		],
+	},
+	"dateTime":{
+		"prefix": "dateTime",
+		"body": [
+			"dateTime",
+		],
+	},
+	"countDownTimer":{
+		"prefix": "countDownTimer",
+		"body": [
+			"countDownTimer",
+		],
+	},
+	"opaque":{
+		"prefix": "opaque",
+		"body": [
+			"opaque",
+		],
+	},
+
+	// layer properties
+	"shadowOpacity":{
+		"prefix": "shadowOpacity",
+		"body": [
+			"shadowOpacity",
+		],
+	},
+	"layerBounds":{
+		"prefix": "layerBounds",
+		"body": [
+			"layerBounds",
+		],
+	},
+	"layerPosition":{
+		"prefix": "layerPosition",
+		"body": [
+			"layerPosition",
+		],
+	},
+	"layerZPosition":{
+		"prefix": "layerZPosition",
+		"body": [
+			"layerZPosition",
+		],
+	},
+	"layerAnchorPoint":{
+		"prefix": "layerAnchorPoint",
+		"body": [
+			"layerAnchorPoint",
+		],
+	},
+	"layerAnchorPointZ":{
+		"prefix": "layerAnchorPointZ",
+		"body": [
+			"layerAnchorPointZ",
+		],
+	},
+	"layerFrame":{
+		"prefix": "layerFrame",
+		"body": [
+			"layerFrame",
+		],
+	},
+	"layerHidden":{
+		"prefix": "layerHidden",
+		"body": [
+			"layerHidden",
+		],
+	},
+	"layerDoubleSided":{
+		"prefix": "layerDoubleSided",
+		"body": [
+			"layerDoubleSided",
+		],
+	},
+	"layerGeometryFlipped":{
+		"prefix": "layerGeometryFlipped",
+		"body": [
+			"layerGeometryFlipped",
+		],
+	},
+	"layerMasksToBounds":{
+		"prefix": "layerMasksToBounds",
+		"body": [
+			"layerMasksToBounds",
+		],
+	},
+	"masksToBounds":{
+		"prefix": "masksToBounds",
+		"body": [
+			"masksToBounds",
+		],
+	},
+	"layerContentsRect":{
+		"prefix": "layerContentsRect",
+		"body": [
+			"layerContentsRect",
+		],
+	},
+	"layerContentsGravity":{
+		"prefix": "layerContentsGravity",
+		"body": [
+			"layerContentsGravity",
+		],
+	},
+	"layerContentsScale":{
+		"prefix": "layerContentsScale",
+		"body": [
+			"layerContentsScale",
+		],
+	},
+	"layerContentsCenter":{
+		"prefix": "layerContentsCenter",
+		"body": [
+			"layerContentsCenter",
+		],
+	},
+	"layerContentsFormat":{
+		"prefix": "layerContentsFormat",
+		"body": [
+			"layerContentsFormat",
+		],
+	},
+	"layerMinificationFilter":{
+		"prefix": "layerMinificationFilter",
+		"body": [
+			"layerMinificationFilter",
+		],
+	},
+	"layerMagnificationFiltery":{
+		"prefix": "layerMagnificationFiltery",
+		"body": [
+			"layerMagnificationFiltery",
+		],
+	},
+	"layerMinificationFilterBias":{
+		"prefix": "layerMinificationFilterBias",
+		"body": [
+			"layerMinificationFilterBias",
+		],
+	},
+	"layerOpaque":{
+		"prefix": "layerOpaque",
+		"body": [
+			"layerOpaque",
+		],
+	},
+	"layerNeedsDisplayOnBoundsChange":{
+		"prefix": "layerNeedsDisplayOnBoundsChange",
+		"body": [
+			"layerNeedsDisplayOnBoundsChange",
+		],
+	},
+	"layerDrawsAsynchronously":{
+		"prefix": "layerDrawsAsynchronously",
+		"body": [
+			"layerDrawsAsynchronously",
+		],
+	},
+	"layerAllowsEdgeAntialiasing":{
+		"prefix": "layerAllowsEdgeAntialiasing",
+		"body": [
+			"layerAllowsEdgeAntialiasing",
+		],
+	},
+	"layerBackgroundColor":{
+		"prefix": "layerBackgroundColor",
+		"body": [
+			"layerBackgroundColor",
+		],
+	},
+	"layerCornerRadius":{
+		"prefix": "layerCornerRadius",
+		"body": [
+			"layerCornerRadius",
+		],
+	},
+	"layerOpacity":{
+		"prefix": "layerOpacity",
+		"body": [
+			"layerOpacity",
+		],
+	},
+	"allowsGroupOpacity":{
+		"prefix": "allowsGroupOpacity",
+		"body": [
+			"allowsGroupOpacity",
+		],
+	},
+	"shouldRasterize":{
+		"prefix": "shouldRasterize",
+		"body": [
+			"shouldRasterize",
+		],
+	},
+	"rasterizationScale":{
+		"prefix": "rasterizationScale",
+		"body": [
+			"rasterizationScale",
+		],
+	},
+	"layerName":{
+		"prefix": "layerName",
+		"body": [
+			"layerName",
+		],
+	},
+	"userInteractionEnabled":{
+		"prefix": "userInteractionEnabled",
+		"body": [
+			"userInteractionEnabled",
+		],
+	},
+	"contentScaleFactor":{
+		"prefix": "contentScaleFactor",
+		"body": [
+			"contentScaleFactor",
+		],
+	},
+	"multipleTouchEnabled":{
+		"prefix": "multipleTouchEnabled",
+		"body": [
+			"multipleTouchEnabled",
+		],
+	},
+	"exclusiveTouch":{
+		"prefix": "exclusiveTouch",
+		"body": [
+			"exclusiveTouch",
+		],
+	},
+	"autoresizesSubviews":{
+		"prefix": "autoresizesSubviews",
+		"body": [
+			"autoresizesSubviews",
+		],
+	},
+	"clearsContextBeforeDrawing":{
+		"prefix": "clearsContextBeforeDrawing",
+		"body": [
+			"clearsContextBeforeDrawing",
+		],
+	},
+	"bar":{
+		"prefix": "bar",
+		"body": [
+			"bar",
+		],
+	},
+	"on":{
+		"prefix": "on",
+		"body": [
+			"on",
+		],
+	},
+
+	"autocapitalizationType":{
+		"prefix": "autocapitalizationType",
+		"body": [
+			"autocapitalizationType",
+		],
+	},
+	"autocorrectionType":{
+		"prefix": "autocorrectionType",
+		"body": [
+			"autocorrectionType",
+		],
+	},
+	"spellCheckingType":{
+		"prefix": "spellCheckingType",
+		"body": [
+			"spellCheckingType",
+		],
+	},
+	"secureTextEntry":{
+		"prefix": "secureTextEntry",
+		"body": [
+			"secureTextEntry",
+		],
+	},
+	"keyboardType":{
+		"prefix": "keyboardType",
+		"body": [
+			"keyboardType",
+		],
+	},
+	"keyboardAppearanceon":{
+		"prefix": "keyboardAppearance",
+		"body": [
+			"keyboardAppearance",
+		],
+	},
+	"returnKeyType":{
+		"prefix": "returnKeyType",
+		"body": [
+			"returnKeyType",
+		],
+	},
+	"clearButtonMode":{
+		"prefix": "clearButtonMode",
+		"body": [
+			"clearButtonMode",
+		],
+	},
+	"enablesReturnKeyAutomatically":{
+		"prefix": "enablesReturnKeyAutomatically",
+		"body": [
+			"enablesReturnKeyAutomatically",
+		],
+	},
+	"leftViewMode":{
+		"prefix": "leftViewMode",
+		"body": [
+			"leftViewMode",
+		],
+	},
+	"rightViewMode":{
+		"prefix": "rightViewMode",
+		"body": [
+			"rightViewMode",
+		],
+	},
+
+	"asciiCapable":{
+		"prefix": "asciiCapable",
+		"body": [
+			"asciiCapable",
+		],
+	},
+	"numberAndPunct":{
+		"prefix": "numberAndPunct",
+		"body": [
+			"numberAndPunct",
+		],
+	},
+	"url":{
+		"prefix": "url",
+		"body": [
+			"url",
+		],
+	},
+	"numberPad":{
+		"prefix": "numberPad",
+		"body": [
+			"numberPad",
+		],
+	},
+	"phonePad":{
+		"prefix": "phonePad",
+		"body": [
+			"phonePad",
+		],
+	},
+	"namePhonePad":{
+		"prefix": "namePhonePad",
+		"body": [
+			"namePhonePad",
+		],
+	},
+	"emailAddress":{
+		"prefix": "emailAddress",
+		"body": [
+			"emailAddress",
+		],
+	},
+
+
+	"decimalPad":{
+		"prefix": "decimalPad",
+		"body": [
+			"decimalPad",
+		],
+	},
+	"twitter":{
+		"prefix": "twitter",
+		"body": [
+			"twitter",
+		],
+	},
+	"webSearch":{
+		"prefix": "webSearch",
+		"body": [
+			"webSearch",
+		],
+	},
+	"asciiCapableNumberPad":{
+		"prefix": "asciiCapableNumberPad",
+		"body": [
+			"asciiCapableNumberPad",
+		],
+	},
+	"never":{
+		"prefix": "never",
+		"body": [
+			"never",
+		],
+	},
+	"whileEditing":{
+		"prefix": "whileEditing",
+		"body": [
+			"whileEditing",
+		],
+	},
+	"unlessEditing":{
+		"prefix": "unlessEditing",
+		"body": [
+			"unlessEditing",
+		],
+	},
+
+	"always":{
+		"prefix": "always",
+		"body": [
+			"always",
+		],
+	},
+	"words":{
+		"prefix": "words",
+		"body": [
+			"words",
+		],
+	},
+	"allCharacters":{
+		"prefix": "allCharacters",
+		"body": [
+			"allCharacters",
+		],
+	},
+	"no":{
+		"prefix": "no",
+		"body": [
+			"no",
+		],
+	},
+
+
+	"no":{
+		"prefix": "no",
+		"body": [
+			"no",
+		],
+	},
+	"yes":{
+		"prefix": "yes",
+		"body": [
+			"yes",
+		],
+	},
+	"dark":{
+		"prefix": "dark",
+		"body": [
+			"dark",
+		],
+	},
+	"light":{
+		"prefix": "light",
+		"body": [
+			"light",
+		],
+	},
+	"alert":{
+		"prefix": "alert",
+		"body": [
+			"alert",
+		],
+	},
+	"go":{
+		"prefix": "go",
+		"body": [
+			"go",
+		],
+	},
+	"google":{
+		"prefix": "google",
+		"body": [
+			"google",
+		],
+	},
+	"join":{
+		"prefix": "join",
+		"body": [
+			"join",
+		],
+	},
+	"next":{
+		"prefix": "next",
+		"body": [
+			"next",
+		],
+	},
+	"route":{
+		"prefix": "route",
+		"body": [
+			"route",
+		],
+	},
+	"search":{
+		"prefix": "search",
+		"body": [
+			"search",
+		],
+	},
+	"send":{
+		"prefix": "send",
+		"body": [
+			"send",
+		],
+	},
+	"yahoo":{
+		"prefix": "yahoo",
+		"body": [
+			"yahoo",
+		],
+	},
+	"done":{
+		"prefix": "done",
+		"body": [
+			"done",
+		],
+	},
+	"emergencyCall":{
+		"prefix": "emergencyCall",
+		"body": [
+			"emergencyCall",
+		],
+	},
+	"continue":{
+		"prefix": "continue",
+		"body": [
+			"continue",
+		],
+	},
+
+	// added at 2018/6/2
+	"lineSpacing":{
+		"prefix": "lineSpacing",
+		"body": [
+			"lineSpacing",
+		],
+	},
+	"paragraphSpacing":{
+		"prefix": "paragraphSpacing",
+		"body": [
+			"paragraphSpacing",
+		],
+	},
+	"firstLineHeadIndent":{
+		"prefix": "firstLineHeadIndent",
+		"body": [
+			"firstLineHeadIndent",
+		],
+	},
+	"headIndent":{
+		"prefix": "headIndent",
+		"body": [
+			"headIndent",
+		],
+	},
+	"tailIndent":{
+		"prefix": "tailIndent",
+		"body": [
+			"tailIndent",
+		],
+	},
+	"font":{
+		"prefix": "font",
+		"body": [
+			"font",
+		],
+	},
+	"placeholderColor":{
+		"prefix": "placeholderColor",
+		"body": [
+			"placeholderColor",
+		],
+	},
+	"alwaysBounceHorizontal":{
+		"prefix": "alwaysBounceHorizontal",
+		"body": [
+			"alwaysBounceHorizontal",
+		],
+	},
+	"alwaysBounceVertical":{
+		"prefix": "alwaysBounceVertical",
+		"body": [
+			"alwaysBounceVertical",
+		],
+	},
+	"Text - RichText":{
+		"prefix": "Text for UILabel",
+		"body": [
+			"<Text name=\"\" onPress=\"\" attr=\"text:, font:system|18, color:black, bgColor:lightGray\"/>",
+		],
+	},
+	"Image - RichText":{
+		"prefix": "Image for UILabel",
+		"body": [
+			"<Image name=\"\" onPress=\"\" attr=\"source:, size:20/20\"/>",
+		],
+	},
+}

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<UIView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" app:flex="1" app:alignItems="center" ios:bgColor="white">
+  <FlexScrollView ios:name="scroll" app:padding="50" app:flex="1" app:width="100%" app:alignItems="center" ios:bgColor="white" ios:vertScroll="true">
+    <FlexTouchView ios:onPress="tapTouchAction">
+      <UIImageView app:width="100" app:height="100" ios:borderRadius="50" ios:clipsToBounds="true" ios:source="qrcode.png">
+        <FlexTouchMaskView ios:bgColor="black" ios:alpha="0.7"/>
+      </UIImageView>
+    </FlexTouchView>
+    <UIView app:height="20"/>
+    <FlexTouchView ios:onPress="tapTouchAction" app:height="100" app:width="100%" app:alignItems="center" app:justifyContent="center" ios:bgColor="#e5e5e5" ios:borderRadius="8" ios:underlayColor="darkGray">
+      <UILabel app:width="100%" ios:fontSize="16" ios:textAlign="center" ios:color="red" ios:text="Please touch me and move\" ios:linesNum="0"/>
+    </FlexTouchView>
+    <UIView app:height="20"/>
+    <UILabel app:width="100%" ios:fontSize="20" ios:linesNum="0" ios:color="#333333" ios:text="You can press the buttons above to see the effect. We use FlexTouchView to provide more powerful function and better flexibility than button."/>
+  </FlexScrollView>
+</UIView>
