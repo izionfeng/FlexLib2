@@ -24,7 +24,6 @@
 #define LAYOUTPARAM     @"layoutParam"
 #define VIEWATTRS       @"viewAttrs"
 #define CHILDREN        @"children"
-#define Use_New_Format  (1)
 
 #pragma mark - Name values
 
@@ -98,8 +97,6 @@ static NameValue _display[] =
     {"none", YGDisplayNone},
 };
 
-static NSDictionary *sAndroid2iOSClassMaps = nil;
-
 NSString *iOSClassFromAndroid(NSString *androidClassName) {
     if (0 != [androidClassName length]) {
         NSString *result = @{
@@ -107,7 +104,12 @@ NSString *iOSClassFromAndroid(NSString *androidClassName) {
             @"TextView" : @"UILabel",
             @"HorizontalScrollView" : @"UIScrollView",
             @"ScrollView" : @"UIScrollView",
-            @"FrameLayout" : @"UIView"
+            @"FrameLayout" : @"UIView",
+            @"View" : @"UIView",
+            @"ImageView" : @"UIImageView",
+            @"EditText" : @"UITextView",
+            @"ScrollView" : @"UIScrollView",
+            @"ListView" : @"UITableView"
         }[androidClassName];
         
         if ([result length]) {
@@ -666,11 +668,9 @@ void FlexApplyLayoutParam(YGLayout* layout,
     return [result copy];
 }
 
-#if Use_New_Format
 +(FlexNode*)buildNodeWithXml:(GDataXMLElement*)element
 {
     FlexNode* node = [[FlexNode alloc]init];
-//    node.viewClassName = @"UIView";
     node.viewClassName = iOSClassFromAndroid([element name]);
 
     NSMutableArray<FlexAttr *> *layoutParams = [NSMutableArray array];
@@ -711,25 +711,28 @@ void FlexApplyLayoutParam(YGLayout* layout,
         else if ([namespace isEqualToString:@"android"]) {
             if ([attrName isEqualToString:@"layout_width"]) {
                 if ([attrValue hasSuffix:@"dp"]) {
-                    FlexAttr* attr = [[FlexAttr alloc] init];
-                    attr.name = @"width";
-                    attr.value = [attrValue substringToIndex:[attrValue length] - 2];
+                    FlexAttr* attr = FlexMakeArtr(@"width", [attrValue substringToIndex:[attrValue length] - 2]);
                     [layoutParams addObject:attr];
                 }
-            }
-            else if ([attrName isEqualToString:@"layout_height"]) {
-                if ([attrValue hasSuffix:@"dp"]) {
-                    FlexAttr* attr = [[FlexAttr alloc] init];
-                    attr.name = @"height";
-                    attr.value = [attrValue substringToIndex:[attrValue length] - 2];
+                else if ([attrValue isEqualToString:@"match_parent"]) {
+                    FlexAttr* attr = FlexMakeArtr(@"width", @"100%");
                     [layoutParams addObject:attr];
                 }
                 
             }
+            else if ([attrName isEqualToString:@"layout_height"]) {
+                if ([attrValue hasSuffix:@"dp"]) {
+                    FlexAttr* attr = FlexMakeArtr(@"height", [attrValue substringToIndex:[attrValue length] - 2]);
+                    [layoutParams addObject:attr];
+                }
+                else if ([attrValue isEqualToString:@"match_parent"]) {
+                    FlexAttr* attr = FlexMakeArtr(@"height", @"100%");
+                    [layoutParams addObject:attr];
+                }
+
+            }
             else if ([attrName isEqualToString:@"background"]) {
-                FlexAttr* attr = [[FlexAttr alloc] init];
-                attr.name = attrName;
-                attr.value = attrValue;
+                FlexAttr* attr = FlexMakeArtr(attrName, attrValue);
                 [viewAttrs addObject:attr];
             }
         }
@@ -759,54 +762,7 @@ void FlexApplyLayoutParam(YGLayout* layout,
     
     return node;
 }
-#else
-+(FlexNode*)buildNodeWithXml:(GDataXMLElement*)element
-{
-    FlexNode* node = [[FlexNode alloc]init];
-    node.viewClassName = [element name];
-    
-    // layout param
-    GDataXMLNode* name = [element attributeForName:@"name"];
-    if(name){
-        node.name = [name stringValue];
-    }
-    
-    // onPress
-    GDataXMLNode* onpress = [element attributeForName:@"onPress"];
-    if(onpress){
-        node.onPress = [onpress stringValue];
-    }
-    
-    // layout param
-    GDataXMLNode* layout = [element attributeForName:@"layout"];
-    if(layout){
-        NSString* param = [layout stringValue];
-        node.layoutParams = [FlexNode parseStringParams:param];
-    }
-    
-    GDataXMLNode* attr = [element attributeForName:@"attr"];
-    if(attr){
-        NSString* param = [attr stringValue];
-        node.viewAttrs = [FlexNode parseStringParams:param];
-    }
-    
-    // children
-    NSArray* children = [element children];
-    if( children.count > 0 ){
-        NSMutableArray* childNodes = [NSMutableArray array] ;
-        
-        for(GDataXMLElement* child in children){
-            if(![child isKindOfClass:[GDataXMLElement class]]){
-                continue;
-            }
-            [childNodes addObject:[FlexNode buildNodeWithXml:child]];
-        }
-        node.children = [childNodes copy] ;
-    }
-    
-    return node;
-}
-#endif
+
 +(FlexNode*)loadNodeData:(NSData*)xmlData
 {
     if(xmlData == nil){
@@ -1007,7 +963,7 @@ NSData* loadFromFile(NSString* resName,NSObject* owner)
         // it's absolute path
         path = resName ;
     }else{
-        path = [[owner bundleForRes]pathForResource:resName ofType:@"xml"];
+        path = [[owner bundleForRes] pathForResource:resName ofType:@"xml"];
     }
     
     if(path==nil){

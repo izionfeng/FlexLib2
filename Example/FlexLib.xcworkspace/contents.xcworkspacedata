@@ -8,7 +8,7 @@
       location = "group:FlexSwiftDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:FlexLib.xcodeproj">
+      location = "group:/Users/zion/dev/xml_unify/myCode/FlexLib2/Example/FlexLib.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

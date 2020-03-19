@@ -11,9 +11,14 @@
 
 #import <UIKit/UIKit.h>
 
+#define FlexMakeArtr(_name_, _value_) ([[FlexAttr alloc] initWithName:_name_ value:(_value_)])
+
 @interface FlexAttr : NSObject<NSCoding>
+
 @property(nonatomic,strong) NSString* name ;
 @property(nonatomic,strong) NSString* value ;
+
+- (instancetype)initWithName:(NSString *)name value:(NSString *)value;
 
 -(BOOL)isValid;
 

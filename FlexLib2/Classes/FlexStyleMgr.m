@@ -15,6 +15,16 @@
 
 
 @implementation FlexAttr
+- (instancetype)initWithName:(NSString *)name value:(NSString *)value {
+    self = [super init];
+    if (self) {
+        _name = name;
+        _value = value;
+        
+    }
+    return self;
+}
+
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
     self = [super init];

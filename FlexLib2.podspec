@@ -31,8 +31,9 @@ It's a layout framework based on yoga engine. The main purpose is to provide eas
   
   # ios
   s.ios.source_files = 'FlexLib2/Classes/**/*'
+#  s.ios.resources = 'FlexLib2/Assets/*.xml'
   s.ios.resource_bundles = {
-     'FlexLib2' => ['FlexLib2/Assets/*']
+     'FlexLib' => ['FlexLib2/Assets/*']
   }
   s.ios.exclude_files = 'FlexLib2/Classes/GDataXMLNode.{h,m}'
   s.subspec 'no-arc' do |sna|
