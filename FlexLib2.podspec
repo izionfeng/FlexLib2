@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint FlexLib.podspec' to ensure this is a
+# Be sure to run `pod lib lint FlexLib2.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'FlexLib'
-  s.version          = '2.4.1'
+  s.name             = 'FlexLib2'
+  s.version          = '1.0'
   s.summary          = 'An obj-c flex layout framework for IOS'
 
 # This description is used to generate tags and improve search results.
@@ -21,29 +21,29 @@ Pod::Spec.new do |s|
 It's a layout framework based on yoga engine. The main purpose is to provide easy and fast usage.
                        DESC
 
-  s.homepage         = 'https://github.com/zhenglibao/FlexLib'
+  s.homepage         = 'https://github.com/zionfong/FlexLib2.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '798393829@qq.com' => '798393829@qq.com' }
-  s.source           = { :git => 'https://github.com/zhenglibao/FlexLib.git', :tag => s.version.to_s }
+  s.author           = { 'zionfong@gmail.com' => 'zionfong@gmail.com' }
+  s.source           = { :git => 'https://github.com/zionfong/FlexLib2.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'
   
   # ios
-  s.ios.source_files = 'FlexLib/Classes/**/*'
+  s.ios.source_files = 'FlexLib2/Classes/**/*'
   s.ios.resource_bundles = {
-     'FlexLib' => ['FlexLib/Assets/*']
+     'FlexLib2' => ['FlexLib2/Assets/*']
   }
-  s.ios.exclude_files = 'FlexLib/Classes/GDataXMLNode.{h,m}'
+  s.ios.exclude_files = 'FlexLib2/Classes/GDataXMLNode.{h,m}'
   s.subspec 'no-arc' do |sna|
     sna.ios.requires_arc = false
-    sna.ios.source_files = 'FlexLib/Classes/GDataXMLNode.{h,m}'
+    sna.ios.source_files = 'FlexLib2/Classes/GDataXMLNode.{h,m}'
   end
   
   # macosx
   s.osx.source_files = 'macosx/Classes/**/*'
   s.osx.resource_bundles = {
-     #'FlexLib' => ['macosx/Assets/*']
+     #'FlexLib2' => ['macosx/Assets/*']
   }
   s.osx.exclude_files = 'macosx/Classes/GDataXMLNode.{h,m}'
   s.subspec 'osx-no-arc' do |sna|
