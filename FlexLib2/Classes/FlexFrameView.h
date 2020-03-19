@@ -8,6 +8,7 @@
  */
 
 #import <UIKit/UIKit.h>
+#import "FlexRootView.h"
 
 typedef void (^FrameChanged)(CGRect);
 
