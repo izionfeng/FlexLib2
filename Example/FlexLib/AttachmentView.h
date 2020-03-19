@@ -7,7 +7,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#import <FlexLib/FlexLib.h>
+#import <FlexLib2/FlexLib.h>
 
 /*
  * AttachmentView演示了如何将xml布局封装成一个控件，然后在

@@ -15,5 +15,5 @@
     @import Foundation;
 #endif
 
-#import <FlexLib/FlexLib.h>
+#import <FlexLib2/FlexLib.h>
 

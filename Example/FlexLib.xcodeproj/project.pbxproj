@@ -842,11 +842,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FlexLib_Example/Pods-FlexLib_Example-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FlexLib/FlexLib.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FlexLib2/FlexLib2.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FlexLib.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FlexLib2.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -6,7 +6,7 @@
 //  Copyright © 2019年 zhenglibao. All rights reserved.
 //
 
-#import <FlexLib/FlexLib.h>
+#import <FlexLib2/FlexLib.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -8,7 +8,7 @@
  */
 
 
-#import <FlexLib/FlexLib.h>
+#import <FlexLib2/FlexLib.h>
 
 /*
  这个例子演示了各种系统控件的创建方法，注意ControlsVC中重写了

@@ -1,19 +1,19 @@
 PODS:
   - Expecta (1.0.6)
-  - FlexLib (2.4.1):
-    - FlexLib/no-arc (= 2.4.1)
-    - FlexLib/osx-no-arc (= 2.4.1)
+  - FlexLib2 (1.0):
+    - FlexLib2/no-arc (= 1.0)
+    - FlexLib2/osx-no-arc (= 1.0)
     - Yoga (= 1.14.0)
-  - FlexLib/no-arc (2.4.1):
+  - FlexLib2/no-arc (1.0):
     - Yoga (= 1.14.0)
-  - FlexLib/osx-no-arc (2.4.1):
+  - FlexLib2/osx-no-arc (1.0):
     - Yoga (= 1.14.0)
   - Specta (1.0.7)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
   - Expecta
-  - FlexLib (from `../`)
+  - FlexLib2 (from `../`)
   - Specta
   - Yoga (= 1.14.0)
 
@@ -24,15 +24,15 @@ SPEC REPOS:
     - Yoga
 
 EXTERNAL SOURCES:
-  FlexLib:
+  FlexLib2:
     :path: "../"
 
 SPEC CHECKSUMS:
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
-  FlexLib: 21fc613fbff8db42ec73abeb7a608675628fb66d
+  FlexLib2: 151202775a215c9e4f1d6fb2da8ead475f1dcac2
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
   Yoga: cff67a400f6b74dc38eb0bad4f156673d9aa980c
 
-PODFILE CHECKSUM: ece2be016e185c24e924a17f190212fae23b3ac6
+PODFILE CHECKSUM: c12196cb141fe94046cbbb64777aeb5c3c19b35c
 
 COCOAPODS: 1.7.5
