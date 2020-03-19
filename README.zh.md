@@ -2,7 +2,10 @@
 ## FlexLib2
 [english](https://github.com/zionfong/FlexLib2/blob/master/README.md)
 
-flexbox最初是web端布局方案，现在已经应用在多个平台。Android、iOS都有单独的实现，Android的实现是google的[flexbox-layout](https://github.com/google/flexbox-layout.git)，iOS的实现是Facebook的[yoga](https://github.com/facebook/yoga.git)。
+flexbox最初是web端布局方案，现在已经应用在多个平台。
+
+Android、iOS都有单独的实现，Android的实现是google的[flexbox-layout](https://github.com/google/flexbox-layout.git)，iOS的实现是Facebook的[yoga](https://github.com/facebook/yoga.git)。
+
 这里提供一种方案，使得同一份XML布局文件可以在Android和iOS上跨端使用。
 
 ## XML文件格式
@@ -10,6 +13,7 @@ flexbox最初是web端布局方案，现在已经应用在多个平台。Android
 
 ## [FlexLib](https://github.com/zhenglibao/FlexLib.git)老用户
 scripts目录提供了转换脚本，使用方法：
+
 转换一个文件：
 ```ruby
  ./scripts/flex_xml_trans.py /path/old_style.xml
@@ -40,10 +44,12 @@ pod 'FlexLib2'
 
 ## 感谢
 感谢[FlexLib](https://github.com/zhenglibao/FlexLib.git)作者[zhenglibao](798393829@qq.com)。
+
 本项目基于FlexLib开发，需要了解基本使用方法、特性、性能可以移步到[FlexLib](https://github.com/zhenglibao/FlexLib.git)。
 
 ## 联系方式
 优先：提issues
+
 email:zionfong@gmail.com,zionfeng@tencent.com
 
 ---
