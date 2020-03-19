@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FlexLib2'
-  s.version          = '1.0'
+  s.version          = '1.1'
   s.summary          = 'a cross platform flex implement for ios'
 
 # This description is used to generate tags and improve search results.
