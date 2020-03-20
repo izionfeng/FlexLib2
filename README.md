@@ -7,22 +7,9 @@ Android、iOS都有单独的实现，Android的实现是google的[flexbox-layout
 
 这里提供一种方案，使得同一份XML布局文件可以在Android和iOS上跨端使用。
 
+
 ## XML文件格式
 完全依照Android写法。只需要添加少量代码，即可在iOS上展示同样的布局。
-
-
-## 兼容[FlexLib](https://github.com/zhenglibao/FlexLib.git)
-scripts目录提供了转换脚本，使用方法：
-
-转换单个XML文件：
-```ruby
- ./scripts/flex_xml_trans.py /path/old_style.xml
-```
-转换目录下所有XML文件：
-```ruby
- ./scripts/flex_xml_trans.py /path
-```
-该项目Example里的XML文件，皆通过此脚本从FlexLib转换而来。
 
 
 ## 安装
@@ -32,6 +19,7 @@ scripts目录提供了转换脚本，使用方法：
 ```ruby
 pod 'FlexLib2'
 ```
+
 
 ## 支持的flexbox属性
 
@@ -46,6 +34,7 @@ pod 'FlexLib2'
 | justifyContent           | flex\_start/flex\_end/center/space\_between/spce\_around          |
 
 这几个属性iOS端的yoga不支持：layout_flexBasisPercent，layout_flexGrow，layout_flexShrink
+
 
 ## 宽/高/margin/padding
 
@@ -97,10 +86,26 @@ namespace ios 可以添加以下特有属性
 
 其余属性，可以查看ViewExt目录下Category的声明。
 
+
 ## 一些例子
 项目Example的界面是通过XML编写的。
 
 另外，flexbox-layout本身有一些测试XML，Example/android_test下面是对这些测试例子进行了适配iOS的结果，除了包含yoga不支持属性的XML，其余的，运行结果跟Android上一致。
+
+
+## 兼容[FlexLib](https://github.com/zhenglibao/FlexLib.git)
+scripts目录提供了转换脚本，使用方法：
+
+转换单个XML文件：
+```ruby
+ ./scripts/flex_xml_trans.py /path/old_style.xml
+```
+转换目录下所有XML文件：
+```ruby
+ ./scripts/flex_xml_trans.py /path
+```
+该项目Example里的XML文件，皆通过此脚本从FlexLib转换而来。
+
 
 ## 感谢
 感谢[FlexLib](https://github.com/zhenglibao/FlexLib.git)作者[zhenglibao](798393829@qq.com)。
