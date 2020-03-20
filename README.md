@@ -53,7 +53,7 @@ pod 'FlexLib2'
 
 下列表格展示双端通用的属性名，但使用的namespace不一样，属性值也有一些差异，比如Android值后面加dp，iOS值可以是数字，可以是一个百分数。
 
-特别指出一下，android:width=match_parent相对应ios:width=100%，而要实现android:height=wrap_content，对app:layout_alignSelf或者父View的app:flexDirection进行赋值即可。
+特别指出一下，android:width=match_parent相对应ios:width=100%。
 
 
 | key                  | android            | ios                         |
@@ -65,33 +65,41 @@ pod 'FlexLib2'
 | layout\_(min/max)Width        | follow Android doc | float num value/percent num |
 | layout\_(min/max)Height    | follow Android doc | float num value/percent num |
 
+
+## 类定义
+对应关系如下
+| Android class name                           | iOS class name |
+|----------------------------------------------|----------------|
+| com\.google\.android\.flexbox\.FlexboxLayout | UIView         |
+| TextView                                     | UILabel        |
+| HorizontalScrollView                         | UIScrollView   |
+| ScrollView                                   | UIScrollView   |
+| FrameLayout                                  | UIView         |
+| View                                         | UIView         |
+| ImageView                                    | UIImageView    |
+| EditText                                     | UITextView     |
+| ScrollView                                   | UIScrollView   |
+| ListView                                     | UITableView    |
+
+其余可以通过更高优先级的ios:class指定。
+
+
 ## ios特有属性
 
-namespace ios，UIView支持的属性如下
+namespace ios 可以添加以下特有属性
 
 | key                             | value                                                                                                                          |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| name                            | 变量名                                                                                                                            |
-| onPress                         | 方法名                                                                                                                            |
-| class                           | 类名                                                                                                                             |
-| style                           | string                                                                                                                         |
+| name                            | 变量名，需要在代码里声明                                                                                                                            |
+| onPress                         | 方法名，需要在代码里声明                                                                                                                            |
+| class                           | 类名，创建相应类时，优先于XML元素名                                                                                                                             |
+| style                           | 参考system.style                                                                                                                         |
 
-## 不支持的flex属性
-
-
-
-## yoga与google flexbox的一些差异
-
-
-
-## 一些小技巧
-
+其余属性，可以查看ViewExt目录下Category的声明。
 
 
 ## 感谢
 感谢[FlexLib](https://github.com/zhenglibao/FlexLib.git)作者[zhenglibao](798393829@qq.com)。
-
-
 
 本项目基于FlexLib开发，关于基本使用方法、特性、性能，可以移步到[FlexLib](https://github.com/zhenglibao/FlexLib.git)进行了解。
 
