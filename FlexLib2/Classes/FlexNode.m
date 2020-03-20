@@ -747,7 +747,7 @@ void FlexApplyLayoutParam(YGLayout* layout,
         }
     }];
     node.layoutParams = layoutParams;
-#if (DEBUG && 1)
+#if (DEBUG && 0)
     FlexAttr *attr = [[FlexAttr alloc] init];
     attr.name = @"background";
     attr.value = [NSString stringWithFormat:@"#%02lX", random() % 0xffffffff];
