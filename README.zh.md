@@ -41,7 +41,24 @@ pod 'FlexLib2'
 
 ## 支持的flex属性
 
-namespace名ios，UIView支持的属性如下
+namespacd android, 通用的flex属性及值如下
+| key                      | value                                                             |
+|--------------------------|-------------------------------------------------------------------|
+| flexDirection            | row/row\_reverse/column/column\_reverse                           |
+| flexWrap                 | nowrap/wrap/wrap\_reverse                                         |
+| alignItems               | flex\_start/flex\_end/center/baseline/stretch                     |
+| alignContent             | flex\_start/flex\_end/center/space\_between/space\_around/stretch |
+| layout\_alignSelf        | auto/flex\_start/flex\_end/center/baseline/stretch                |
+| justifyContent           | flex\_start/flex\_end/center/space\_between/spce\_around          |
+| layout\_flexBasisPercent | float num value                                                   |
+| layout\_flexGrow         | float num value                                                   |
+| layout\_flexShrink       | float num value                                                   |
+|                          |                                                                   |
+|                          |                                                                   |
+|                          |                                                                   |
+
+
+namespace ios，UIView支持的属性如下
 | key                             | value                                                                                                                          |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | name                            | 变量名                                                                                                                            |
