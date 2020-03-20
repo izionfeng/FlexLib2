@@ -54,8 +54,32 @@ namespacd android, 通用的flex属性及值如下
 | layout\_flexGrow         | float num value                                                   |
 | layout\_flexShrink       | float num value                                                   |
 |                          |                                                                   |
-|                          |                                                                   |
-|                          |                                                                   |
+
+像素硬编码
+| namespace android    |                    | namespace ios |                             |
+|----------------------|--------------------|---------------|-----------------------------|
+| key                  | value              | key           | value                       |
+| layout\_margin       | follow Android doc | margin        | float num value             |
+| layout\_marginStart  | follow Android doc | marginStart   | float num value             |
+| layout\_marginEnd    | follow Android doc | marginEnd     | float num value             |
+| layout\_marginTop    | follow Android doc | marginTop     | float num value             |
+| layout\_marginBottom | follow Android doc | marginBottom  | float num value             |
+| layout\_marginLeft   | follow Android doc | marginLeft    | float num value             |
+| layout\_marginRight  | follow Android doc | marginRight   | float num value             |
+| padding              | follow Android doc | padding       | float num value             |
+| paddingStart         | follow Android doc | paddingStart  | float num value             |
+| paddingEnd           | follow Android doc | paddingEnd    | float num value             |
+| paddingTop           | follow Android doc | paddingTop    | float num value             |
+| paddingBottom        | follow Android doc | paddingBottom | float num value             |
+| paddingLeft          | follow Android doc | paddingLeft   | float num value             |
+| paddingRight         | follow Android doc | paddingRight  | float num value             |
+| layout\_width        | follow Android doc | width         | float num value/percent num |
+| layout\_height       | follow Android doc | height        | float num value/percent num |
+| layout\_minWidth     | follow Android doc | minWidth      | float num value/percent num |
+| layout\_minHeight    | follow Android doc | minHeight     | float num value/percent num |
+| layout\_maxWidth     | follow Android doc | maxWidth      | float num value/percent num |
+| layou\_maxHeight     | follow Android doc | maxHeight     | float num value/percent num |
+
 
 
 namespace ios，UIView支持的属性如下
