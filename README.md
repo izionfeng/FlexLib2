@@ -35,7 +35,7 @@ pod 'FlexLib2'
 
 ## 支持的flexbox属性
 
-采用namespace前缀android, 双端通用的flexbox属性及值如下
+采用namespace前缀app 双端通用的flexbox属性及值如下
 | key                      | value                                                             |
 |--------------------------|-------------------------------------------------------------------|
 | flexDirection            | row/row\_reverse/column/column\_reverse                           |
@@ -53,7 +53,7 @@ pod 'FlexLib2'
 
 下列表格展示双端相对应的相关属性。
 
-|  android             |           |  ios          |                    |
+|  namespace android             |           |  namespace ios          |                    |
 |----------------------|--------------------|---------------|-----------------------------|
 | key                  | value              | key           | value                       |
 | layout\_margin       | follow Android doc | margin        | float num value/percent num             |
