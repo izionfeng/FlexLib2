@@ -58,26 +58,12 @@ pod 'FlexLib2'
 
 | key                  | android            | ios                         |
 |----------------------|--------------------|-----------------------------|
-| layout\_margin       | follow Android doc | float num value/percent num |
-| layout\_marginStart  | follow Android doc | float num value/percent num |
-| layout\_marginEnd    | follow Android doc | float num value/percent num |
-| layout\_marginTop    | follow Android doc | float num value/percent num |
-| layout\_marginBottom | follow Android doc | float num value/percent num |
-| layout\_marginLeft   | follow Android doc | float num value/percent num |
-| layout\_marginRight  | follow Android doc | float num value/percent num |
-| padding              | follow Android doc | float num value/percent num |
-| paddingStart         | follow Android doc | float num value/percent num |
-| paddingEnd           | follow Android doc | float num value/percent num |
-| paddingTop           | follow Android doc | float num value/percent num |
-| paddingBottom        | follow Android doc | float num value/percent num |
-| paddingLeft          | follow Android doc | float num value/percent num |
-| paddingRight         | follow Android doc | float num value/percent num |
+| layout\_margin(-/Start/End/Top/Bottom/Left/Right)       | follow Android doc | float num value/percent num |
+| padding(-/Start/End/Top/Bottom/Left/Right)              | follow Android doc | float num value/percent num |
 | layout\_width        | follow Android doc | float num value/percent num |
-| layout\_minWidth     | follow Android doc | float num value/percent num |
-| layout\_minHeight    | follow Android doc | float num value/percent num |
-| layout\_maxWidth     | follow Android doc | float num value/percent num |
-| layou\_maxHeight     | follow Android doc | float num value/percent num |
-
+| layout\_height     | follow Android doc | float num value/percent num |
+| layout\_(min/max)Width        | follow Android doc | float num value/percent num |
+| layout\_(min/max)Height    | follow Android doc | float num value/percent num |
 
 ## ios特有属性
 
@@ -89,63 +75,6 @@ namespace ios，UIView支持的属性如下
 | onPress                         | 方法名                                                                                                                            |
 | class                           | 类名                                                                                                                             |
 | style                           | string                                                                                                                         |
-| bgColor                         | \[Hex String\]/\[image name\]/black/white/clear/darkGray/lightGray/gray/red/green/blue/cyan/yellow/magenta/orange/purple/brown |
-| font                            | \[system/bold/PingFangSC\-Medium/\.\.\.\]\|\[num value\]，例：PingFangSC\-Medium\|16                                              |
-| borderWidth                     | float num value                                                                                                                |
-| borderColor                     | 同bgColor                                                                                                                       |
-| borderRadius                    | float num value                                                                                                                |
-| shadowOffset                    | \[float num value/float num value\]，例：\[1\.0/2\.0\]                                                                            |
-| shadowOapcity                   | float num value                                                                                                                |
-| shadowRadius                    | float num value                                                                                                                |
-| shadowColor                     | 同bgColor                                                                                                                       |
-| contentMode                     | scaleToFill/scaleAspectFit/scaleAspectFill/redraw/center/top/bottom/left/right/topLeft/topRight/bottomLeft/bottomRight         |
-| alpha                           | float num value                                                                                                                |
-| hidden                          | true/false                                                                                                                     |
-| clipsToBounds                   | true/false                                                                                                                     |
-| tintColor                       | 同bgColor                                                                                                                       |
-| tag                             | int num value                                                                                                                  |
-| stickTop                        | true/false                                                                                                                     |
-| layerBounds                     | \[float num value/float num value/float num value/float num value\]，例：\[1\.0/2\.0/3\.0/4\.0\]                                  |
-| layerPosition                   | 同shadowOffset                                                                                                                  |
-| layerZPosition                  | 同shadowOffset                                                                                                                  |
-| layerAnchorPoint                | 同shadowOffset                                                                                                                  |
-| layerAnchorPointZ               | float num value                                                                                                                |
-| layerFrame                      | 同layerBounds                                                                                                                   |
-| layerHidden                     | true/false                                                                                                                     |
-| layerDoubleSided                | true/false                                                                                                                     |
-| layerGeomertyFlipped            | true/false                                                                                                                     |
-| layerMasksToBounds              | true/false                                                                                                                     |
-| masksToBounds                   | true/false                                                                                                                     |
-| layerContentsRect               | 同layerBounds                                                                                                                   |
-| layerContentsGravity            | 同CALayer的contentsGravity                                                                                                       |
-| layerContentsScale              | float num value                                                                                                                |
-| layerContentsCenter             | 同layerBounds                                                                                                                   |
-| layerContentsFormat             | 同CALayer的contentsFormat                                                                                                        |
-| layerMinificationFilter         | 同CALayer的minificationFilter                                                                                                    |
-| layerMagnificationFiltery       | 同CALayer的magnificationFilter                                                                                                   |
-| layerMinificationFilterBias     | float num value                                                                                                                |
-| layerOpaque                     | true/false                                                                                                                     |
-| layerNeedsDisplayOnBoundsChange | true/false                                                                                                                     |
-| layerDrawsAsynchronously        | true/false                                                                                                                     |
-| layerAllowsEdgeAntialiasing     | true/false                                                                                                                     |
-| layerBackgroundColor            | 同bgColor                                                                                                                       |
-| layerCornerRadius               | float num value                                                                                                                |
-| layerOpacity                    | float num value                                                                                                                |
-| allowsGroupOpacity              | true/false                                                                                                                     |
-| shouldRasterize                 | true/false                                                                                                                     |
-| background                      | 同bgColor                                                                                                                       |
-| rasterizationScale              | float num value                                                                                                                |
-| layerName                       | string                                                                                                                         |
-| userInteractionEnabled          | true/false                                                                                                                     |
-| contentScaleFactor              | float num value                                                                                                                |
-| multipleTouchEnabled            | true/false                                                                                                                     |
-| exclusiveTouch                  | true/false                                                                                                                     |
-| autoresizesSubviews             | true/false                                                                                                                     |
-| opaque                          | true/false                                                                                                                     |
-| clearsContextBeforeDrawing      | true/false                                                                                                                     |
-|                                 |                                                                                                                                |
-
-
 
 ## 不支持的flex属性
 
