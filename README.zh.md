@@ -41,6 +41,69 @@ pod 'FlexLib2'
 
 ## 支持的flex属性
 
+namespace名ios，UIView支持的属性如下
+| key                             | value                                                                                                                          |
+|---------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| name                            | 变量名                                                                                                                            |
+| onPress                         | 方法名                                                                                                                            |
+| class                           | 类名                                                                                                                             |
+| style                           | string                                                                                                                         |
+| bgColor                         | \[Hex String\]/\[image name\]/black/white/clear/darkGray/lightGray/gray/red/green/blue/cyan/yellow/magenta/orange/purple/brown |
+| font                            | \[system/bold/PingFangSC\-Medium/\.\.\.\]\|\[num value\]，例：PingFangSC\-Medium\|16                                              |
+| borderWidth                     | float num value                                                                                                                |
+| borderColor                     | 同bgColor                                                                                                                       |
+| borderRadius                    | float num value                                                                                                                |
+| shadowOffset                    | \[float num value/float num value\]，例：\[1\.0/2\.0\]                                                                            |
+| shadowOapcity                   | float num value                                                                                                                |
+| shadowRadius                    | float num value                                                                                                                |
+| shadowColor                     | 同bgColor                                                                                                                       |
+| contentMode                     | scaleToFill/scaleAspectFit/scaleAspectFill/redraw/center/top/bottom/left/right/topLeft/topRight/bottomLeft/bottomRight         |
+| alpha                           | float num value                                                                                                                |
+| hidden                          | true/false                                                                                                                     |
+| clipsToBounds                   | true/false                                                                                                                     |
+| tintColor                       | 同bgColor                                                                                                                       |
+| tag                             | int num value                                                                                                                  |
+| stickTop                        | true/false                                                                                                                     |
+| layerBounds                     | \[float num value/float num value/float num value/float num value\]，例：\[1\.0/2\.0/3\.0/4\.0\]                                  |
+| layerPosition                   | 同shadowOffset                                                                                                                  |
+| layerZPosition                  | 同shadowOffset                                                                                                                  |
+| layerAnchorPoint                | 同shadowOffset                                                                                                                  |
+| layerAnchorPointZ               | float num value                                                                                                                |
+| layerFrame                      | 同layerBounds                                                                                                                   |
+| layerHidden                     | true/false                                                                                                                     |
+| layerDoubleSided                | true/false                                                                                                                     |
+| layerGeomertyFlipped            | true/false                                                                                                                     |
+| layerMasksToBounds              | true/false                                                                                                                     |
+| masksToBounds                   | true/false                                                                                                                     |
+| layerContentsRect               | 同layerBounds                                                                                                                   |
+| layerContentsGravity            | 同CALayer的contentsGravity                                                                                                       |
+| layerContentsScale              | float num value                                                                                                                |
+| layerContentsCenter             | 同layerBounds                                                                                                                   |
+| layerContentsFormat             | 同CALayer的contentsFormat                                                                                                        |
+| layerMinificationFilter         | 同CALayer的minificationFilter                                                                                                    |
+| layerMagnificationFiltery       | 同CALayer的magnificationFilter                                                                                                   |
+| layerMinificationFilterBias     | float num value                                                                                                                |
+| layerOpaque                     | true/false                                                                                                                     |
+| layerNeedsDisplayOnBoundsChange | true/false                                                                                                                     |
+| layerDrawsAsynchronously        | true/false                                                                                                                     |
+| layerAllowsEdgeAntialiasing     | true/false                                                                                                                     |
+| layerBackgroundColor            | 同bgColor                                                                                                                       |
+| layerCornerRadius               | float num value                                                                                                                |
+| layerOpacity                    | float num value                                                                                                                |
+| allowsGroupOpacity              | true/false                                                                                                                     |
+| shouldRasterize                 | true/false                                                                                                                     |
+| background                      | 同bgColor                                                                                                                       |
+| rasterizationScale              | float num value                                                                                                                |
+| layerName                       | string                                                                                                                         |
+| userInteractionEnabled          | true/false                                                                                                                     |
+| contentScaleFactor              | float num value                                                                                                                |
+| multipleTouchEnabled            | true/false                                                                                                                     |
+| exclusiveTouch                  | true/false                                                                                                                     |
+| autoresizesSubviews             | true/false                                                                                                                     |
+| opaque                          | true/false                                                                                                                     |
+| clearsContextBeforeDrawing      | true/false                                                                                                                     |
+|                                 |                                                                                                                                |
+
 
 
 ## 不支持的flex属性
