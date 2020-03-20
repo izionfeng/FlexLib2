@@ -51,31 +51,33 @@ pod 'FlexLib2'
 
 因为Android和iOS的布局尺寸单位不等同，所以有必要区分双端的相关属性。具体可以参考[这里](https://juejin.im/entry/5a37bd866fb9a04509099d25)。
 
-下列表格展示双端相对应的相关属性。
+下列表格展示双端通用的属性名，但使用的namespace不一样，属性值也有一些差异，比如Android值后面加dp，iOS值可以是数字，可以是一个百分数。
 
-|  namespace android             |           |  namespace ios          |                    |
-|----------------------|--------------------|---------------|-----------------------------|
-| key                  | value              | key           | value                       |
-| layout\_margin       | follow Android doc | margin        | float num value/percent num             |
-| layout\_marginStart  | follow Android doc | marginStart   | float num value/percent num             |
-| layout\_marginEnd    | follow Android doc | marginEnd     | float num value/percent num             |
-| layout\_marginTop    | follow Android doc | marginTop     | float num value/percent num             |
-| layout\_marginBottom | follow Android doc | marginBottom  | float num value/percent num             |
-| layout\_marginLeft   | follow Android doc | marginLeft    | float num value/percent num             |
-| layout\_marginRight  | follow Android doc | marginRight   | float num value/percent num             |
-| padding              | follow Android doc | padding       | float num value/percent num             |
-| paddingStart         | follow Android doc | paddingStart  | float num value/percent num             |
-| paddingEnd           | follow Android doc | paddingEnd    | float num value/percent num             |
-| paddingTop           | follow Android doc | paddingTop    | float num value/percent num             |
-| paddingBottom        | follow Android doc | paddingBottom | float num value/percent num             |
-| paddingLeft          | follow Android doc | paddingLeft   | float num value/percent num             |
-| paddingRight         | follow Android doc | paddingRight  | float num value/percent num             |
-| layout\_width        | follow Android doc | width         | float num value/percent num |
-| layout\_height       | follow Android doc | height        | float num value/percent num |
-| layout\_minWidth     | follow Android doc | minWidth      | float num value/percent num |
-| layout\_minHeight    | follow Android doc | minHeight     | float num value/percent num |
-| layout\_maxWidth     | follow Android doc | maxWidth      | float num value/percent num |
-| layou\_maxHeight     | follow Android doc | maxHeight     | float num value/percent num |
+特别指出一下，android:width=match_parent相对应ios:width=100%，而要实现android:height=wrap_content，对app:layout_alignSelf或者父View的app:flexDirection进行赋值即可。
+
+
+| key                  | android            | ios                         |
+|----------------------|--------------------|-----------------------------|
+| layout\_margin       | follow Android doc | float num value/percent num |
+| layout\_marginStart  | follow Android doc | float num value/percent num |
+| layout\_marginEnd    | follow Android doc | float num value/percent num |
+| layout\_marginTop    | follow Android doc | float num value/percent num |
+| layout\_marginBottom | follow Android doc | float num value/percent num |
+| layout\_marginLeft   | follow Android doc | float num value/percent num |
+| layout\_marginRight  | follow Android doc | float num value/percent num |
+| padding              | follow Android doc | float num value/percent num |
+| paddingStart         | follow Android doc | float num value/percent num |
+| paddingEnd           | follow Android doc | float num value/percent num |
+| paddingTop           | follow Android doc | float num value/percent num |
+| paddingBottom        | follow Android doc | float num value/percent num |
+| paddingLeft          | follow Android doc | float num value/percent num |
+| paddingRight         | follow Android doc | float num value/percent num |
+| layout\_width        | follow Android doc | float num value/percent num |
+| layout\_minWidth     | follow Android doc | float num value/percent num |
+| layout\_minHeight    | follow Android doc | float num value/percent num |
+| layout\_maxWidth     | follow Android doc | float num value/percent num |
+| layou\_maxHeight     | follow Android doc | float num value/percent num |
+
 
 ## ios特有属性
 
