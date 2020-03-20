@@ -97,6 +97,10 @@ namespace ios 可以添加以下特有属性
 
 其余属性，可以查看ViewExt目录下Category的声明。
 
+## 一些例子
+项目Example的界面是通过XML编写的。
+
+另外，flexbox-layout本身有一些测试XML，Example/android_test下面是对这些测试例子进行了适配iOS的结果，除了包含yoga不支持属性的XML，其余的，运行结果跟Android上一致。
 
 ## 感谢
 感谢[FlexLib](https://github.com/zhenglibao/FlexLib.git)作者[zhenglibao](798393829@qq.com)。
