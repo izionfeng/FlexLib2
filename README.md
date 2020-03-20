@@ -8,17 +8,8 @@ Android、iOS都有单独的实现，Android的实现是google的[flexbox-layout
 这里提供一种方案，使得同一份XML布局文件可以在Android和iOS上跨端使用。
 
 
-## XML文件格式
+## XML文件语法
 完全依照Android写法。只需要添加少量代码，即可在iOS上展示同样的布局。
-
-
-## 安装
-
-通过pod方式安装FlexLib2，例子如下:
-
-```ruby
-pod 'FlexLib2'
-```
 
 
 ## 支持的flexbox属性
@@ -73,7 +64,7 @@ pod 'FlexLib2'
 其余可以通过更高优先级的ios:class指定。
 
 
-## ios特有属性
+## iOS特有属性
 
 namespace ios 可以添加以下特有属性
 
@@ -91,6 +82,15 @@ namespace ios 可以添加以下特有属性
 项目Example的界面是通过XML编写的。
 
 另外，flexbox-layout本身有一些测试XML，Example/android_test下面是对这些测试例子进行了适配iOS的结果，除了包含yoga不支持属性的XML，其余的，运行结果跟Android上一致。
+
+
+## 安装
+
+通过pod方式安装FlexLib2，例子如下:
+
+```ruby
+pod 'FlexLib2'
+```
 
 
 ## 兼容[FlexLib](https://github.com/zhenglibao/FlexLib.git)
