@@ -19,6 +19,8 @@
     android:id="@+id/flexbox_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    ios:layout_width="100%"
+    ios:layout_height="100%"
     app:flexDirection="row_reverse"
     app:justifyContent="center"
     app:alignContent="center"

@@ -20,7 +20,9 @@
     app:alignItems="flex_start"
     app:flexDirection="row"
     android:layout_width="400dp"
-    android:layout_height="400dp">
+    android:layout_height="400dp"
+    ios:layout_width="400"
+    ios:layout_height="400">
 
     <TextView
         android:id="@+id/text1"
@@ -28,11 +30,13 @@
         android:layout_height="wrap_content"
         android:text="1"
         ios:text="1"
-        app:layout_minWidth="100dp" />
+        app:layout_minWidth="100dp"
+        ios:layout_minWidth="100" />
 
     <TextView
         android:id="@+id/text2"
         android:layout_width="0dp"
+        ios:layout_width="0"
         android:layout_height="wrap_content"
         android:text="2"
         ios:text="2"

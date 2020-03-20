@@ -20,6 +20,7 @@
     android:id="@+id/flexbox_layout"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    ios:layout_height="100%"
     app:alignSelf="flex_start"
     app:flexDirection="column"
     app:alignItems="flex_start" >
@@ -28,6 +29,7 @@
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
+        ios:layout_height="0"
         android:text="1"
         ios:text="1"
         app:layout_flexGrow="1" />
@@ -36,6 +38,7 @@
         android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
+        ios:layout_height="0"
         android:text="2-some long text"
         ios:text="2-some long text"
         app:layout_flexGrow="1" />

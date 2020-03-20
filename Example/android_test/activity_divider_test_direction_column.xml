@@ -20,6 +20,8 @@
     android:id="@+id/flexbox_layout"
     android:layout_width="400dp"
     android:layout_height="400dp"
+    ios:layout_width="400"
+    ios:layout_height="400"
     app:flexDirection="column"
     app:flexWrap="wrap"
     app:alignContent="flex_start"
@@ -29,6 +31,8 @@
 
     <TextView
         ios:text="1"
+        ios:layout_width="80"
+        ios:layout_height="90"
         android:id="@+id/text1"
         android:layout_width="80dp"
         android:layout_height="90dp"
@@ -36,6 +40,8 @@
 
     <TextView
         ios:text="2"
+        ios:layout_width="80"
+        ios:layout_height="90"
         android:id="@+id/text2"
         android:layout_width="80dp"
         android:layout_height="90dp"
@@ -43,6 +49,8 @@
 
     <TextView
         ios:text="3"
+        ios:layout_width="80"
+        ios:layout_height="90"
         android:id="@+id/text3"
         android:layout_width="80dp"
         android:layout_height="90dp"
@@ -50,6 +58,8 @@
 
     <TextView
         ios:text="4"
+        ios:layout_width="80"
+        ios:layout_height="140"
         android:id="@+id/text4"
         android:layout_width="80dp"
         android:layout_height="140dp"
@@ -57,6 +67,8 @@
 
     <TextView
         ios:text="5"
+        ios:layout_width="80"
+        ios:layout_height="140"
         android:id="@+id/text5"
         android:layout_width="80dp"
         android:layout_height="140dp"

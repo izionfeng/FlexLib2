@@ -57,11 +57,35 @@ def trans_xml_file(filePath):
 
     print "trans succes!"
 
+    return outputPath
+
 
 
 def make_new_node(node, nsmap=None):
     if node.tag == etree.Comment:
         return node
+    transDict = {
+            "margin" : "layout_margin",
+            "marginStart" : "layout_marginStart",
+            "marginEnd" : "layout_marginEnd",
+            "marginTop" : "layout_marginTop",
+            "marginBottom" : "layout_marginBottom",
+            "marginLeft" : "layout_marginLeft",
+            "marginRight" : "layout_marginRight",
+            "padding" : "padding",
+            "paddingStart" : "paddingStart",
+            "paddingEnd" : "paddingEnd",
+            "paddingTop" : "paddingTop",
+            "paddingBottom" : "paddingBottom",
+            "paddingLeft" : "paddingLeft",
+            "paddingRight" : "paddingRight",
+            "width" : "layout_width",
+            "height" : "layout_height",
+            "minWidth" : "layout_minWidth",
+            "maxWidth" : "layout_maxWidth",
+            "minHeight" : "layout_minHeight",
+            "maxHeight" : "layout_maxHeight",
+            }
     nodeNew = etree.Element(node.tag, nsmap=nsmap)
     keys = node.keys()
     for key in keys:
@@ -76,9 +100,13 @@ def make_new_node(node, nsmap=None):
                 if 2 == len(kvs):
                     attKey = kvs[0].strip()
                     attValue = kvs[1]
-                    if "@" == attKey:
-                        attKey = "style"
-                    nodeNew.set(QName(XMLNamespces.app, attKey), attValue)
+                    if attKey in transDict:
+                        attKey = transDict[attKey]
+                        nodeNew.set(QName(XMLNamespces.ios, attKey), attValue)
+                    else:
+                        if "@" == attKey:
+                            attKey = "style"
+                        nodeNew.set(QName(XMLNamespces.app, attKey), attValue)
         elif 'attr' == key:
             value = node.get(key, '')
             items = value.split(',')
@@ -106,7 +134,9 @@ if __name__ == '__main__':
     if os.path.isdir(args.xmlFilePath):
         for file in os.listdir(args.xmlFilePath):
             if file.endswith(".xml"):
-                trans_xml_file(os.path.join(args.xmlFilePath, file))
+                outputPath = trans_xml_file(os.path.join(args.xmlFilePath, file))
+                print "output path : " + outputPath 
     else:
-        trans_xml_file(args.xmlFilePath)
+        oututPath = trans_xml_file(args.xmlFilePath)
+        print "output path : " + outputPath 
 

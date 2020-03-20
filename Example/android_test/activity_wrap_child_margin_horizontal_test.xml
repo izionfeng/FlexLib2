@@ -17,6 +17,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/flexbox_layout"
     android:layout_width="360dp"
+    ios:layout_width="360"
     android:layout_height="wrap_content"
     app:flexDirection="row"
     app:flexWrap="wrap"
@@ -24,20 +25,29 @@
 
     <TextView
         android:id="@+id/text1"
+        ios:layout_width="280"
+        ios:layout_height="80"
+        ios:text="1"
         android:layout_width="280dp"
         android:layout_height="80dp"
         android:text="1" />
 
     <TextView
         android:id="@+id/text2"
+        ios:layout_width="30"
+        ios:layout_height="80"
+        ios:layout_margin="32"
+        ios:text="1"
         android:layout_width="30dp"
         android:layout_height="80dp"
         android:layout_margin="32dp"
-        app:margin="32"
         android:text="2" />
 
     <TextView
         android:id="@+id/text3"
+        ios:layout_width="100"
+        ios:layout_height="80"
+        ios:text="3"
         android:layout_width="100dp"
         android:layout_height="80dp"
         android:text="3" />

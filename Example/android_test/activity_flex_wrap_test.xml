@@ -18,12 +18,17 @@
     android:id="@+id/flexbox_layout"
     android:layout_width="360dp"
     android:layout_height="300dp"
+    ios:layout_width="360"
+    ios:layout_height="300"
     app:flexDirection="row"
     app:flexWrap="wrap"
     app:alignItems="flex_start"
     app:alignContent="flex_start">
 
     <TextView
+        ios:text="1"
+        ios:layout_width="160"
+        ios:layout_height="120"
         android:id="@+id/text1"
         android:layout_width="160dp"
         android:layout_height="120dp"
@@ -31,6 +36,9 @@
         app:layout_flexShrink="0" />
 
     <TextView
+        ios:text="2"
+        ios:layout_width="160"
+        ios:layout_height="120"
         android:id="@+id/text2"
         android:layout_width="160dp"
         android:layout_height="120dp"
@@ -38,6 +46,9 @@
         app:layout_flexShrink="0" />
 
     <TextView
+        ios:text="3"
+        ios:layout_width="160"
+        ios:layout_height="120"
         android:id="@+id/text3"
         android:layout_width="160dp"
         android:layout_height="120dp"

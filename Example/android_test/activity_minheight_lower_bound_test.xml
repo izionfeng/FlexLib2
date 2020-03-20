@@ -19,6 +19,8 @@
     xmlns:ios="https://github.com/zionfong/FlexLib2.git"
     android:layout_width="400dp"
     android:layout_height="400dp"
+    ios:layout_width="400"
+    ios:layout_height="400"
     app:flexDirection="column"
     app:alignItems="flex_start"
     app:flexWrap="nowrap" >
@@ -27,14 +29,17 @@
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
+        ios:layout_height="200"
         android:text="1"
         ios:text="1"
-        app:layout_minHeight="150dp" />
+        app:layout_minHeight="150dp"
+        ios:layout_minHeight="150" />
 
     <TextView
         android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
+        ios:layout_height="200"
         ios:text="2"
         android:text="2" />
 
@@ -42,6 +47,7 @@
         android:id="@+id/text3"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
+        ios:layout_height="200"
         ios:text="3"
         android:text="3" />
 
@@ -49,5 +55,7 @@
         android:id="@+id/text4"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
+        ios:layout_height="200"
+        ios:text="4"
         android:text="4" />
 </com.google.android.flexbox.FlexboxLayout>

@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <UIView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" app:flex="1" app:justifyContent="center" app:alignItems="center" ios:bgColor="white">
-  <UIView app:height="1" app:width="*50%" ios:bgColor="red"/>
-  <FlexScrollView ios:name="_scroll" app:flex="1" app:width="100%" app:alignItems="center" ios:vertScroll="true">
-    <UILabel ios:name="_label" app:marginTop="*20" ios:style="system/buttonText" ios:text="You can run on iPhoneX" ios:color="blue"/>
-    <UILabel ios:name="_label" app:marginTop="20" ios:style="system/buttonText" ios:text="@multilangdemo" ios:linesNum="0" ios:color="blue"/>
-    <UIView app:width="100%" app:flexDirection="row" app:justifyContent="space-around">
+  <UIView ios:layout_height="1" ios:layout_width="*50%" ios:bgColor="red"/>
+  <FlexScrollView ios:name="_scroll" app:flex="1" ios:layout_width="100%" app:alignItems="center" ios:vertScroll="true">
+    <UILabel ios:name="_label" ios:layout_marginTop="*20" ios:style="system/buttonText" ios:text="You can run on iPhoneX" ios:color="blue"/>
+    <UILabel ios:name="_label" ios:layout_marginTop="20" ios:style="system/buttonText" ios:text="@multilangdemo" ios:linesNum="0" ios:color="blue"/>
+    <UIView ios:layout_width="100%" app:flexDirection="row" app:justifyContent="space-around">
       <FlexTouchView ios:onPress="onControls" app:style="system/button" ios:style="system/buttonAttr">
         <UILabel ios:style="system/buttonText" ios:text="Controls"/>
       </FlexTouchView>
@@ -12,7 +12,7 @@
         <UILabel ios:style="system/buttonText" ios:text="TableView"/>
       </FlexTouchView>
     </UIView>
-    <UIView app:width="100%" app:flexDirection="row" app:justifyContent="space-around">
+    <UIView ios:layout_width="100%" app:flexDirection="row" app:justifyContent="space-around">
       <FlexTouchView ios:onPress="onTestScrollView:" app:style="system/button" ios:style="system/buttonAttr">
         <UILabel ios:style="system/buttonText" ios:text="ScrollView"/>
       </FlexTouchView>
@@ -20,7 +20,7 @@
         <UILabel ios:style="system/buttonText" ios:text="ModalView"/>
       </FlexTouchView>
     </UIView>
-    <UIView app:width="100%" app:flexDirection="row" app:justifyContent="space-around">
+    <UIView ios:layout_width="100%" app:flexDirection="row" app:justifyContent="space-around">
       <FlexTouchView ios:onPress="onTestLoginView:" app:style="system/button" ios:style="system/buttonAttr">
         <UILabel ios:style="system/buttonText" ios:text="FlexTouchView"/>
       </FlexTouchView>
@@ -28,7 +28,7 @@
         <UILabel ios:style="system/buttonText" ios:text="CollectionView"/>
       </FlexTouchView>
     </UIView>
-    <UIView app:width="100%" app:flexDirection="row" app:justifyContent="space-around">
+    <UIView ios:layout_width="100%" app:flexDirection="row" app:justifyContent="space-around">
       <FlexTouchView ios:onPress="onTextView:" app:style="system/button" ios:style="system/buttonAttr">
         <UILabel ios:style="system/buttonText" ios:text="Forms"/>
       </FlexTouchView>
@@ -36,7 +36,7 @@
         <UILabel ios:style="system/buttonText" ios:text="Layouts"/>
       </FlexTouchView>
     </UIView>
-    <UIView app:width="100%" app:flexDirection="row" app:justifyContent="space-around">
+    <UIView ios:layout_width="100%" app:flexDirection="row" app:justifyContent="space-around">
       <FlexTouchView ios:onPress="onFrameVC" app:style="system/button" ios:style="system/buttonAttr">
         <UILabel ios:style="system/buttonText" ios:text="FrameVC"/>
       </FlexTouchView>
@@ -44,7 +44,7 @@
         <UILabel ios:style="system/buttonText" ios:text="Online Flex Explorer"/>
       </FlexTouchView>
     </UIView>
-    <UIView app:width="100%" app:flexDirection="row" app:justifyContent="space-around">
+    <UIView ios:layout_width="100%" app:flexDirection="row" app:justifyContent="space-around">
       <FlexTouchView ios:onPress="onFrameView" app:style="system/button" ios:style="system/buttonAttr">
         <UILabel ios:style="system/buttonText" ios:text="FrameView"/>
       </FlexTouchView>

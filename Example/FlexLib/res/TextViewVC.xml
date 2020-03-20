@@ -1,57 +1,57 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <UIView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" app:flex="1" app:alignItems="center" ios:bgColor="white">
-  <FlexScrollView ios:name="scroll" app:flex="1" app:width="100%" ios:bgColor="white" ios:vertScroll="true" ios:horzIndicator="false" ios:vertIndicator="true">
-    <UIView app:flexDirection="row" app:alignItems="center" app:margin="10">
+  <FlexScrollView ios:name="scroll" app:flex="1" ios:layout_width="100%" ios:bgColor="white" ios:vertScroll="true" ios:horzIndicator="false" ios:vertIndicator="true">
+    <UIView app:flexDirection="row" app:alignItems="center" ios:layout_margin="10">
       <UIView app:flex="1">
         <UILabel ios:fontSize="16" ios:color="#333333" ios:text="归属合同"/>
-        <UIView app:height="10"/>
-        <UITextField app:width="100%" ios:placeHolder="请输入本次收款金额" ios:fontSize="16" ios:color="#333333"/>
+        <UIView ios:layout_height="10"/>
+        <UITextField ios:layout_width="100%" ios:placeHolder="请输入本次收款金额" ios:fontSize="16" ios:color="#333333"/>
       </UIView>
-      <UIImageView app:height="20" app:width="20" ios:source="arrow_right.png"/>
+      <UIImageView ios:layout_height="20" ios:layout_width="20" ios:source="arrow_right.png"/>
     </UIView>
-    <UIView app:height="1" ios:bgColor="#e5e5e5"/>
-    <UIView app:flexDirection="row" app:alignItems="center" app:margin="10">
+    <UIView ios:layout_height="1" ios:bgColor="#e5e5e5"/>
+    <UIView app:flexDirection="row" app:alignItems="center" ios:layout_margin="10">
       <UIView app:flex="1">
         <UILabel ios:fontSize="16" ios:color="#333333" ios:text="收款类型"/>
-        <UIView app:height="10"/>
-        <UITextField app:width="100%" ios:placeHolder="请选择" ios:fontSize="16" ios:color="#333333"/>
+        <UIView ios:layout_height="10"/>
+        <UITextField ios:layout_width="100%" ios:placeHolder="请选择" ios:fontSize="16" ios:color="#333333"/>
       </UIView>
-      <UIImageView app:height="20" app:width="20" ios:source="arrow_right.png"/>
+      <UIImageView ios:layout_height="20" ios:layout_width="20" ios:source="arrow_right.png"/>
     </UIView>
-    <UIView app:height="1" ios:bgColor="#e5e5e5"/>
-    <UIView app:flexDirection="row" app:alignItems="center" app:margin="10">
+    <UIView ios:layout_height="1" ios:bgColor="#e5e5e5"/>
+    <UIView app:flexDirection="row" app:alignItems="center" ios:layout_margin="10">
       <UIView app:flex="1">
         <UILabel ios:fontSize="16" ios:color="#333333" ios:text="收款日期"/>
-        <UIView app:height="10"/>
-        <UITextField app:width="100%" ios:placeHolder="收款人" ios:fontSize="16" ios:color="#333333"/>
+        <UIView ios:layout_height="10"/>
+        <UITextField ios:layout_width="100%" ios:placeHolder="收款人" ios:fontSize="16" ios:color="#333333"/>
       </UIView>
-      <UIImageView app:height="20" app:width="20" ios:source="arrow_right.png"/>
+      <UIImageView ios:layout_height="20" ios:layout_width="20" ios:source="arrow_right.png"/>
     </UIView>
-    <UIView app:height="1" ios:bgColor="#e5e5e5"/>
-    <UIView app:flexDirection="row" app:alignItems="center" app:margin="10">
+    <UIView ios:layout_height="1" ios:bgColor="#e5e5e5"/>
+    <UIView app:flexDirection="row" app:alignItems="center" ios:layout_margin="10">
       <UIView app:flex="1">
         <UILabel ios:fontSize="16" ios:color="#333333" ios:text="收款人"/>
-        <UIView app:height="10"/>
-        <UITextField app:width="100%" ios:placeHolder="小飞" ios:fontSize="16" ios:color="#333333"/>
+        <UIView ios:layout_height="10"/>
+        <UITextField ios:layout_width="100%" ios:placeHolder="小飞" ios:fontSize="16" ios:color="#333333"/>
       </UIView>
-      <UIImageView app:height="20" app:width="20" ios:source="arrow_right.png"/>
+      <UIImageView ios:layout_height="20" ios:layout_width="20" ios:source="arrow_right.png"/>
     </UIView>
-    <UIView app:height="1" ios:bgColor="#e5e5e5"/>
-    <UIView app:flexDirection="row" app:alignItems="center" app:margin="10">
+    <UIView ios:layout_height="1" ios:bgColor="#e5e5e5"/>
+    <UIView app:flexDirection="row" app:alignItems="center" ios:layout_margin="10">
       <UIView app:flex="1">
         <UILabel ios:fontSize="16" ios:color="#333333" ios:text="备注"/>
-        <UIView app:height="10"/>
-        <FlexTextView app:width="100%" app:minHeight="30" app:maxHeight="95" ios:fontSize="16" ios:color="#333333" ios:placeholder="这是一个UITextView\" ios:你可以输入多行文本来试试效果=")"/>
+        <UIView ios:layout_height="10"/>
+        <FlexTextView ios:layout_width="100%" ios:layout_minHeight="30" ios:layout_maxHeight="95" ios:fontSize="16" ios:color="#333333" ios:placeholder="这是一个UITextView\" ios:你可以输入多行文本来试试效果=")"/>
       </UIView>
     </UIView>
-    <UIView app:height="10" ios:bgColor="#e5e5e5"/>
+    <UIView ios:layout_height="10" ios:bgColor="#e5e5e5"/>
     <AttachmentView/>
-    <UIView app:height="10" ios:bgColor="#e5e5e5"/>
-    <UIView app:margin="10">
+    <UIView ios:layout_height="10" ios:bgColor="#e5e5e5"/>
+    <UIView ios:layout_margin="10">
       <UILabel ios:fontSize="16" ios:color="#333333" ios:text="图片"/>
-      <UIView app:height="10"/>
+      <UIView ios:layout_height="10"/>
       <FlexContainerView ios:name="_imgParent" app:flexWrap="wrap" app:flexDirection="row" app:justifyContent="flex-start">
-        <FlexTouchView ios:onPress="onAddImage" app:width="60" app:margin="2" app:height="40" app:justifyContent="center" app:alignItems="center" ios:borderRadius="10" ios:borderWidth="1" ios:borderColor="#e5e5e5" ios:underlayColor="#e5e5e5">
+        <FlexTouchView ios:onPress="onAddImage" ios:layout_width="60" ios:layout_margin="2" ios:layout_height="40" app:justifyContent="center" app:alignItems="center" ios:borderRadius="10" ios:borderWidth="1" ios:borderColor="#e5e5e5" ios:underlayColor="#e5e5e5">
           <UILabel ios:text="+" ios:fontSize="20" ios:color="#999999"/>
         </FlexTouchView>
       </FlexContainerView>

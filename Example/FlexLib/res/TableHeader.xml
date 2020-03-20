@@ -1,4 +1,4 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<UIView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" app:padding="14" ios:bgColor="#f5f5f5">
-  <UILabel ios:name="content" app:width="100%" ios:fontSize="18" ios:color="#333333" ios:text="this is header" ios:linesNum="0" ios:lineBreakMode="truncatingTail"/>
+<UIView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" ios:padding="14" ios:bgColor="#f5f5f5">
+  <UILabel ios:name="content" ios:layout_width="100%" ios:fontSize="18" ios:color="#333333" ios:text="this is header" ios:linesNum="0" ios:lineBreakMode="truncatingTail"/>
 </UIView>

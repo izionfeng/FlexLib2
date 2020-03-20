@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<FlexScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" app:flex="1" app:margin="50" ios:vertScroll="true" ios:bgColor="lightGray" ios:borderColor="red" ios:borderWidth="1" ios:borderRadius="5">
+<FlexScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" app:flex="1" ios:layout_margin="50" ios:vertScroll="true" ios:bgColor="lightGray" ios:borderColor="red" ios:borderWidth="1" ios:borderRadius="5">
   <UILabel ios:fontSize="16" ios:color="#333333" ios:linesNum="0" ios:text="这是一个基于FlexFrameView的组件，不能使用在xml中，只能通过传统的initWithFrame方式创建并存取frame，与FlexCustomBaseView相比可以减少视图层级"/>
-  <FlexContainerView ios:name="_attachParent" app:marginTop="5" app:marginBottom="5" app:alignItems="center"/>
+  <FlexContainerView ios:name="_attachParent" ios:layout_marginTop="5" ios:layout_marginBottom="5" app:alignItems="center"/>
   <FlexTouchView ios:onPress="onAddAttachment" ios:underlayColor="#e5e5e5">
     <UIImageView ios:source="select.png"/>
   </FlexTouchView>

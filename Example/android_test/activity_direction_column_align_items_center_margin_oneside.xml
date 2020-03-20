@@ -20,14 +20,18 @@
     android:id="@+id/flexbox_layout"
     android:layout_width="100dp"
     android:layout_height="20dp"
+    ios:layout_width="100"
+    ios:layout_height="20"
     app:flexDirection="column">
 
     <TextView
         ios:text="1"
         android:id="@+id/text1"
         android:layout_width="20dp"
+        ios:layout_width="20"
         android:layout_height="match_parent"
         android:layout_marginRight="20dp"
+        ios:layout_marginRight="20"
         android:text="1"
         app:layout_alignSelf="center" />
 

@@ -20,10 +20,15 @@
     android:id="@+id/flexbox_layout"
     android:layout_width="20dp"
     android:layout_height="100dp"
+    ios:layout_width="20"
+    ios:layout_height="100"
     app:flexDirection="row">
 
     <TextView
         ios:text="1"
+        ios:layout_width="100%"
+        ios:layout_height="20"
+        ios:layout_marginBottom="20"
         android:id="@+id/text1"
         android:layout_width="match_parent"
         android:layout_height="20dp"

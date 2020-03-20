@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<UIView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" app:flex="1" app:margin="10">
+<UIView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" app:flex="1" ios:layout_margin="10">
   <UILabel ios:fontSize="16" ios:color="#333333" ios:text="附件"/>
-  <FlexContainerView ios:name="_attachParent" app:marginTop="5" app:marginBottom="5"/>
+  <FlexContainerView ios:name="_attachParent" ios:layout_marginTop="5" ios:layout_marginBottom="5"/>
   <FlexTouchView ios:onPress="onAddAttachment" ios:underlayColor="#e5e5e5">
     <UIImageView ios:source="select.png"/>
   </FlexTouchView>

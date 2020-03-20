@@ -1,52 +1,52 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<UIView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" app:flex="1" app:alignItems="center" app:marginTop="64" ios:bgColor="white">
-  <UIView app:height="1" app:width="100%" ios:bgColor="red"/>
-  <FlexScrollView ios:name="scroll" app:padding="10" app:flex="1" app:width="100%" ios:bgColor="#f5f5f5" ios:vertScroll="true" ios:horzIndicator="false" ios:vertIndicator="true">
-    <UILabel app:margin="10" ios:fontSize="16" ios:linesNum="0" ios:color="red" ios:text="这个页面的控制器直接从UIViewController继承，不使用FlexBaseVC，注意这个xml里边的最外层view的marginTop设置成了64"/>
+<UIView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" app:flex="1" app:alignItems="center" ios:layout_marginTop="64" ios:bgColor="white">
+  <UIView ios:layout_height="1" ios:layout_width="100%" ios:bgColor="red"/>
+  <FlexScrollView ios:name="scroll" ios:padding="10" app:flex="1" ios:layout_width="100%" ios:bgColor="#f5f5f5" ios:vertScroll="true" ios:horzIndicator="false" ios:vertIndicator="true">
+    <UILabel ios:layout_margin="10" ios:fontSize="16" ios:linesNum="0" ios:color="red" ios:text="这个页面的控制器直接从UIViewController继承，不使用FlexBaseVC，注意这个xml里边的最外层view的marginTop设置成了64"/>
     <UILabel ios:fontSize="14" ios:color="#666666" ios:text="Serial No."/>
-    <UIView app:height="20"/>
-    <UITextField app:height="50" ios:style="system/border" ios:text="" ios:placeHolder="Input the sn here"/>
-    <UIView app:height="20"/>
-    <UILabel app:width="100%" app:height="50" ios:stickTop="true" ios:bgColor="lightGray" ios:fontSize="18" ios:color="#880000" ios:text="这是一个能够吸附到顶部的控件\" ios:linesNum="0"/>
-    <UIView app:height="20"/>
-    <UIView app:flexDirection="row" app:padding="10" app:alignItems="center" ios:style="system/border" ios:bgColor="white">
-      <UIImageView app:width="40" app:height="40" ios:source="addnewtype.png"/>
+    <UIView ios:layout_height="20"/>
+    <UITextField ios:layout_height="50" ios:style="system/border" ios:text="" ios:placeHolder="Input the sn here"/>
+    <UIView ios:layout_height="20"/>
+    <UILabel ios:layout_width="100%" ios:layout_height="50" ios:stickTop="true" ios:bgColor="lightGray" ios:fontSize="18" ios:color="#880000" ios:text="这是一个能够吸附到顶部的控件\" ios:linesNum="0"/>
+    <UIView ios:layout_height="20"/>
+    <UIView app:flexDirection="row" ios:padding="10" app:alignItems="center" ios:style="system/border" ios:bgColor="white">
+      <UIImageView ios:layout_width="40" ios:layout_height="40" ios:source="addnewtype.png"/>
       <UIView>
         <UILabel ios:fontSize="14" ios:color="#666666" ios:text="Name - zhenglibao"/>
-        <UIView app:height="10"/>
+        <UIView ios:layout_height="10"/>
         <UILabel ios:fontSize="12" ios:color="#999999" ios:text="Your favorite."/>
       </UIView>
     </UIView>
-    <UIView app:height="20"/>
-    <UIView app:padding="10" ios:style="system/border">
-      <UILabel app:marginLeft="5" ios:style="system/filterLeftLabel" ios:text="Sex"/>
+    <UIView ios:layout_height="20"/>
+    <UIView ios:padding="10" ios:style="system/border">
+      <UILabel ios:layout_marginLeft="5" ios:style="system/filterLeftLabel" ios:text="Sex"/>
       <UIView app:flexDirection="row" app:justifyContent="space-around">
-        <UILabel app:width="30%" ios:style="system/redBorder" ios:text="200" ios:textAlign="center"/>
-        <UILabel app:width="30%" ios:style="system/redBorder" ios:text="300" ios:textAlign="center"/>
-        <UILabel app:width="30%" ios:style="system/redBorder" ios:text="400" ios:textAlign="center"/>
+        <UILabel ios:layout_width="30%" ios:style="system/redBorder" ios:text="200" ios:textAlign="center"/>
+        <UILabel ios:layout_width="30%" ios:style="system/redBorder" ios:text="300" ios:textAlign="center"/>
+        <UILabel ios:layout_width="30%" ios:style="system/redBorder" ios:text="400" ios:textAlign="center"/>
       </UIView>
     </UIView>
-    <UIView app:height="20"/>
-    <UIView app:flexDirection="row" app:padding="10" ios:style="system/border">
+    <UIView ios:layout_height="20"/>
+    <UIView app:flexDirection="row" ios:padding="10" ios:style="system/border">
       <UILabel ios:style="system/bigFont" ios:text="Address"/>
-      <UIView app:width="5"/>
+      <UIView ios:layout_width="5"/>
       <UIView app:flex="1">
-        <UILabel app:width="100%" ios:style="system/bigFont" ios:fontSize="18" ios:text="北京市海淀区学院路甲5号-中关村768产业园" ios:linesNum="4" ios:lineBreakMode="charWrapping"/>
+        <UILabel ios:layout_width="100%" ios:style="system/bigFont" ios:fontSize="18" ios:text="北京市海淀区学院路甲5号-中关村768产业园" ios:linesNum="4" ios:lineBreakMode="charWrapping"/>
       </UIView>
     </UIView>
-    <UIView app:height="20"/>
-    <UIView app:flexDirection="row" app:justifyContent="center" app:padding="10" app:alignItems="center" ios:style="system/border">
-      <UILabel app:height="30" ios:style="system/bigFont" ios:bgColor="#55ff55" ios:text="Address"/>
-      <UILabel app:height="50" ios:style="system/bigFont" ios:bgColor="orange" ios:text="Beijing"/>
+    <UIView ios:layout_height="20"/>
+    <UIView app:flexDirection="row" app:justifyContent="center" ios:padding="10" app:alignItems="center" ios:style="system/border">
+      <UILabel ios:layout_height="30" ios:style="system/bigFont" ios:bgColor="#55ff55" ios:text="Address"/>
+      <UILabel ios:layout_height="50" ios:style="system/bigFont" ios:bgColor="orange" ios:text="Beijing"/>
     </UIView>
-    <UIView app:height="20"/>
-    <UILabel ios:name="multilabel" app:width="100%" ios:style="system/bigFont" ios:linesNum="0"/>
-    <UIView app:height="40"/>
-    <UIView ios:onPress="tapShow" app:flexDirection="row" app:justifyContent="center" app:padding="10" app:alignItems="center" ios:style="system/border">
-      <UILabel app:height="30" ios:style="system/bigFont" ios:color="red" ios:text="Click to show / hide text"/>
+    <UIView ios:layout_height="20"/>
+    <UILabel ios:name="multilabel" ios:layout_width="100%" ios:style="system/bigFont" ios:linesNum="0"/>
+    <UIView ios:layout_height="40"/>
+    <UIView ios:onPress="tapShow" app:flexDirection="row" app:justifyContent="center" ios:padding="10" app:alignItems="center" ios:style="system/border">
+      <UILabel ios:layout_height="30" ios:style="system/bigFont" ios:color="red" ios:text="Click to show / hide text"/>
     </UIView>
-    <UIView app:height="20" ios:bgColor="clear"/>
-    <UILabel app:width="100%" ios:style="system/bigFont" ios:text="测试文字\" ios:linesNum="0"/>
-    <UIView app:height="50" ios:bgColor="clear"/>
+    <UIView ios:layout_height="20" ios:bgColor="clear"/>
+    <UILabel ios:layout_width="100%" ios:style="system/bigFont" ios:text="测试文字\" ios:linesNum="0"/>
+    <UIView ios:layout_height="50" ios:bgColor="clear"/>
   </FlexScrollView>
 </UIView>

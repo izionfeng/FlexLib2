@@ -1,59 +1,59 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <UIView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" app:flex="1" app:justifyContent="center" app:alignItems="center" ios:bgColor="white">
-  <UILabel app:marginTop="20" ios:style="system/buttonText" ios:text="justifyContent Demo"/>
-  <FlexScrollView app:flex="1" app:width="100%" app:alignItems="center" ios:vertScroll="true">
-    <UIView app:flexDirection="row" app:width="100%" app:justifyContent="space-around">
+  <UILabel ios:layout_marginTop="20" ios:style="system/buttonText" ios:text="justifyContent Demo"/>
+  <FlexScrollView app:flex="1" ios:layout_width="100%" app:alignItems="center" ios:vertScroll="true">
+    <UIView app:flexDirection="row" ios:layout_width="100%" app:justifyContent="space-around">
       <!-- justifyContent flex-start -->
-      <UIView app:width="45%" app:alignItems="center">
-        <UILabel app:marginTop="20" ios:style="system/buttonText" ios:text="flex-start"/>
-        <UIView app:width="100%" app:height="200" app:alignItems="center" app:justifyContent="flex-start" ios:borderWidth="1" ios:borderColor="lightGray" ios:borderRadius="4">
-          <UIView app:width="50%" app:height="15%" ios:bgColor="red"/>
-          <UIView app:width="70%" app:height="15%" ios:bgColor="green"/>
-          <UIView app:width="40%" app:height="15%" ios:bgColor="blue"/>
+      <UIView ios:layout_width="45%" app:alignItems="center">
+        <UILabel ios:layout_marginTop="20" ios:style="system/buttonText" ios:text="flex-start"/>
+        <UIView ios:layout_width="100%" ios:layout_height="200" app:alignItems="center" app:justifyContent="flex-start" ios:borderWidth="1" ios:borderColor="lightGray" ios:borderRadius="4">
+          <UIView ios:layout_width="50%" ios:layout_height="15%" ios:bgColor="red"/>
+          <UIView ios:layout_width="70%" ios:layout_height="15%" ios:bgColor="green"/>
+          <UIView ios:layout_width="40%" ios:layout_height="15%" ios:bgColor="blue"/>
         </UIView>
       </UIView>
       <!-- justifyContent flex-end -->
-      <UIView app:width="45%" app:alignItems="center">
-        <UILabel app:marginTop="20" ios:style="system/buttonText" ios:text="flex-end"/>
-        <UIView app:width="100%" app:height="200" app:alignItems="center" app:justifyContent="flex-end" ios:borderWidth="1" ios:borderColor="lightGray" ios:borderRadius="4">
-          <UIView app:width="50%" app:height="15%" ios:bgColor="red"/>
-          <UIView app:width="70%" app:height="15%" ios:bgColor="green"/>
-          <UIView app:width="40%" app:height="15%" ios:bgColor="blue"/>
+      <UIView ios:layout_width="45%" app:alignItems="center">
+        <UILabel ios:layout_marginTop="20" ios:style="system/buttonText" ios:text="flex-end"/>
+        <UIView ios:layout_width="100%" ios:layout_height="200" app:alignItems="center" app:justifyContent="flex-end" ios:borderWidth="1" ios:borderColor="lightGray" ios:borderRadius="4">
+          <UIView ios:layout_width="50%" ios:layout_height="15%" ios:bgColor="red"/>
+          <UIView ios:layout_width="70%" ios:layout_height="15%" ios:bgColor="green"/>
+          <UIView ios:layout_width="40%" ios:layout_height="15%" ios:bgColor="blue"/>
         </UIView>
       </UIView>
     </UIView>
-    <UIView app:flexDirection="row" app:width="100%" app:justifyContent="space-around">
+    <UIView app:flexDirection="row" ios:layout_width="100%" app:justifyContent="space-around">
       <!-- justifyContent center -->
-      <UIView app:width="45%" app:alignItems="center">
-        <UILabel app:marginTop="20" ios:style="system/buttonText" ios:text="center"/>
-        <UIView app:width="100%" app:height="200" app:alignItems="center" app:justifyContent="center" ios:borderWidth="1" ios:borderColor="lightGray" ios:borderRadius="4">
-          <UIView app:width="50%" app:height="15%" ios:bgColor="red"/>
-          <UIView app:width="70%" app:height="15%" ios:bgColor="green"/>
-          <UIView app:width="40%" app:height="15%" ios:bgColor="blue"/>
+      <UIView ios:layout_width="45%" app:alignItems="center">
+        <UILabel ios:layout_marginTop="20" ios:style="system/buttonText" ios:text="center"/>
+        <UIView ios:layout_width="100%" ios:layout_height="200" app:alignItems="center" app:justifyContent="center" ios:borderWidth="1" ios:borderColor="lightGray" ios:borderRadius="4">
+          <UIView ios:layout_width="50%" ios:layout_height="15%" ios:bgColor="red"/>
+          <UIView ios:layout_width="70%" ios:layout_height="15%" ios:bgColor="green"/>
+          <UIView ios:layout_width="40%" ios:layout_height="15%" ios:bgColor="blue"/>
         </UIView>
       </UIView>
       <!-- justifyContent space-between -->
-      <UIView app:width="45%" app:alignItems="center">
-        <UILabel app:marginTop="20" ios:style="system/buttonText" ios:text="space-between"/>
-        <UIView app:width="100%" app:height="200" app:alignItems="center" app:justifyContent="space-between" ios:borderWidth="1" ios:borderColor="lightGray" ios:borderRadius="4">
-          <UIView app:width="50%" app:height="15%" ios:bgColor="red"/>
-          <UIView app:width="70%" app:height="15%" ios:bgColor="green"/>
-          <UIView app:width="40%" app:height="15%" ios:bgColor="blue"/>
+      <UIView ios:layout_width="45%" app:alignItems="center">
+        <UILabel ios:layout_marginTop="20" ios:style="system/buttonText" ios:text="space-between"/>
+        <UIView ios:layout_width="100%" ios:layout_height="200" app:alignItems="center" app:justifyContent="space-between" ios:borderWidth="1" ios:borderColor="lightGray" ios:borderRadius="4">
+          <UIView ios:layout_width="50%" ios:layout_height="15%" ios:bgColor="red"/>
+          <UIView ios:layout_width="70%" ios:layout_height="15%" ios:bgColor="green"/>
+          <UIView ios:layout_width="40%" ios:layout_height="15%" ios:bgColor="blue"/>
         </UIView>
       </UIView>
     </UIView>
-    <UIView app:flexDirection="row" app:width="100%" app:justifyContent="space-around">
+    <UIView app:flexDirection="row" ios:layout_width="100%" app:justifyContent="space-around">
       <!-- justifyContent space-around -->
-      <UIView app:width="45%" app:alignItems="space-around">
-        <UILabel app:marginTop="20" ios:style="system/buttonText" ios:text="space-around"/>
-        <UIView app:width="100%" app:height="200" app:alignItems="center" app:justifyContent="space-around" ios:borderWidth="1" ios:borderColor="lightGray" ios:borderRadius="4">
-          <UIView app:width="50%" app:height="15%" ios:bgColor="red"/>
-          <UIView app:width="70%" app:height="15%" ios:bgColor="green"/>
-          <UIView app:width="40%" app:height="15%" ios:bgColor="blue"/>
+      <UIView ios:layout_width="45%" app:alignItems="space-around">
+        <UILabel ios:layout_marginTop="20" ios:style="system/buttonText" ios:text="space-around"/>
+        <UIView ios:layout_width="100%" ios:layout_height="200" app:alignItems="center" app:justifyContent="space-around" ios:borderWidth="1" ios:borderColor="lightGray" ios:borderRadius="4">
+          <UIView ios:layout_width="50%" ios:layout_height="15%" ios:bgColor="red"/>
+          <UIView ios:layout_width="70%" ios:layout_height="15%" ios:bgColor="green"/>
+          <UIView ios:layout_width="40%" ios:layout_height="15%" ios:bgColor="blue"/>
         </UIView>
       </UIView>
       <!-- justifyContent blank -->
-      <UIView app:width="45%" app:alignItems="center"/>
+      <UIView ios:layout_width="45%" app:alignItems="center"/>
     </UIView>
   </FlexScrollView>
 </UIView>

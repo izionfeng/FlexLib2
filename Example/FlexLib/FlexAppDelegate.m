@@ -16,6 +16,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSArray *list = @[
+        kCAGravityBottom,
+        kCAGravityBottomLeft,
+        kCAGravityBottomRight,
+        kCAGravityCenter,
+        kCAGravityLeft,
+        kCAGravityResize,
+        kCAGravityResizeAspect,
+        kCAGravityResizeAspectFill,
+        kCAGravityRight,
+        kCAGravityTop,
+        kCAGravityTopLeft,
+        kCAGravityTopRight,
+    ];
+    NSString *str = [list componentsJoinedByString:@"/"];
+    NSLog(@"%@", str);
     FlexRestorePreviewSetting();
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

@@ -18,6 +18,8 @@
     android:id="@+id/flexbox_layout"
     android:layout_width="320dp"
     android:layout_height="320dp"
+    ios:layout_width="320"
+    ios:layout_height="320"
     app:flexWrap="wrap">
 
 </com.google.android.flexbox.FlexboxLayout>

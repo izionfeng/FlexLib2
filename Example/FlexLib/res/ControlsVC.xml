@@ -1,87 +1,87 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<FlexScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" app:flex="1" app:padding="14" ios:vertScroll="true" ios:bgColor="white">
-  <UIView app:minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
-    <UILabel ios:name="" app:width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UILabel"/>
-    <UILabel ios:name="" app:maxWidth="200" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="这是一个多行的label\"/>
+<FlexScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ios="https://github.com/zionfong/FlexLib2.git" xmlns:tools="http://schemas.android.com/tools" app:flex="1" ios:padding="14" ios:vertScroll="true" ios:bgColor="white">
+  <UIView ios:layout_minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
+    <UILabel ios:name="" ios:layout_width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UILabel"/>
+    <UILabel ios:name="" ios:layout_maxWidth="200" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="这是一个多行的label\"/>
   </UIView>
-  <UIView app:height="1" app:marginTop="8" app:marginBottom="8" ios:bgColor="#f5f5f5"/>
-  <UIView app:minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
-    <UILabel ios:name="" app:width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UIButton"/>
-    <UIButton ios:name="" app:maxWidth="200" ios:title="Button" ios:color="red"/>
+  <UIView ios:layout_height="1" ios:layout_marginTop="8" ios:layout_marginBottom="8" ios:bgColor="#f5f5f5"/>
+  <UIView ios:layout_minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
+    <UILabel ios:name="" ios:layout_width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UIButton"/>
+    <UIButton ios:name="" ios:layout_maxWidth="200" ios:title="Button" ios:color="red"/>
   </UIView>
-  <UIView app:height="1" app:marginTop="8" app:marginBottom="8" ios:bgColor="#f5f5f5"/>
-  <UIView app:minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
-    <UILabel ios:name="" app:width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UIImageView"/>
-    <UIImageView ios:name="" app:maxWidth="200" ios:source="addnewtype.png"/>
+  <UIView ios:layout_height="1" ios:layout_marginTop="8" ios:layout_marginBottom="8" ios:bgColor="#f5f5f5"/>
+  <UIView ios:layout_minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
+    <UILabel ios:name="" ios:layout_width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UIImageView"/>
+    <UIImageView ios:name="" ios:layout_maxWidth="200" ios:source="addnewtype.png"/>
   </UIView>
-  <UIView app:height="1" app:marginTop="8" app:marginBottom="8" ios:bgColor="#f5f5f5"/>
-  <UIView app:minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
-    <UILabel ios:name="" app:width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UITextField"/>
-    <UITextField ios:name="" app:flex="1" app:height="40" ios:placeholder="这是一个UITextField，可以输入文字" ios:borderColor="#f5f5f5" ios:borderWidth="1" ios:borderRadius="4"/>
+  <UIView ios:layout_height="1" ios:layout_marginTop="8" ios:layout_marginBottom="8" ios:bgColor="#f5f5f5"/>
+  <UIView ios:layout_minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
+    <UILabel ios:name="" ios:layout_width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UITextField"/>
+    <UITextField ios:name="" app:flex="1" ios:layout_height="40" ios:placeholder="这是一个UITextField，可以输入文字" ios:borderColor="#f5f5f5" ios:borderWidth="1" ios:borderRadius="4"/>
   </UIView>
-  <UIView app:height="1" app:marginTop="8" app:marginBottom="8" ios:bgColor="#f5f5f5"/>
-  <UIView app:minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
-    <UILabel ios:name="" app:width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UITextView"/>
-    <FlexTextView app:flex="1" app:minHeight="40" app:maxHeight="95" ios:borderColor="#f5f5f5" ios:borderWidth="1" ios:borderRadius="4" ios:fontSize="18" ios:color="darkGray" ios:text="这是一个能自动根据字数调整高度的文本输入框"/>
+  <UIView ios:layout_height="1" ios:layout_marginTop="8" ios:layout_marginBottom="8" ios:bgColor="#f5f5f5"/>
+  <UIView ios:layout_minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
+    <UILabel ios:name="" ios:layout_width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UITextView"/>
+    <FlexTextView app:flex="1" ios:layout_minHeight="40" ios:layout_maxHeight="95" ios:borderColor="#f5f5f5" ios:borderWidth="1" ios:borderRadius="4" ios:fontSize="18" ios:color="darkGray" ios:text="这是一个能自动根据字数调整高度的文本输入框"/>
   </UIView>
-  <UIView app:minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
-    <UILabel ios:name="" app:width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UIActivityIndicatorView"/>
-    <TestIndicator ios:name="_activityView" app:width="40" app:height="40" ios:style="gray" ios:color="blue" ios:tag="888"/>
+  <UIView ios:layout_minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
+    <UILabel ios:name="" ios:layout_width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UIActivityIndicatorView"/>
+    <TestIndicator ios:name="_activityView" ios:layout_width="40" ios:layout_height="40" ios:style="gray" ios:color="blue" ios:tag="888"/>
   </UIView>
-  <UIView app:height="1" app:marginTop="8" app:marginBottom="8" ios:bgColor="#f5f5f5"/>
-  <UIView app:minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
-    <UILabel ios:name="" app:width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UIDatePicker"/>
-    <UIDatePicker ios:name="_datePicker" app:flex="1" app:height="100" ios:pickerMode="dateTime"/>
+  <UIView ios:layout_height="1" ios:layout_marginTop="8" ios:layout_marginBottom="8" ios:bgColor="#f5f5f5"/>
+  <UIView ios:layout_minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
+    <UILabel ios:name="" ios:layout_width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UIDatePicker"/>
+    <UIDatePicker ios:name="_datePicker" app:flex="1" ios:layout_height="100" ios:pickerMode="dateTime"/>
   </UIView>
-  <UIView app:height="1" app:marginTop="8" app:marginBottom="8" ios:bgColor="#f5f5f5"/>
-  <UIView app:minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
-    <UILabel ios:name="" app:width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UIPageControl"/>
-    <UIPageControl ios:name="_pageControl" app:width="100" app:height="50" ios:numberOfPages="5" ios:currentPage="3" ios:pageTintColor="red" ios:curPageTintColor="blue"/>
+  <UIView ios:layout_height="1" ios:layout_marginTop="8" ios:layout_marginBottom="8" ios:bgColor="#f5f5f5"/>
+  <UIView ios:layout_minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
+    <UILabel ios:name="" ios:layout_width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UIPageControl"/>
+    <UIPageControl ios:name="_pageControl" ios:layout_width="100" ios:layout_height="50" ios:numberOfPages="5" ios:currentPage="3" ios:pageTintColor="red" ios:curPageTintColor="blue"/>
   </UIView>
-  <UIView app:height="1" app:marginTop="8" app:marginBottom="8" ios:bgColor="#f5f5f5"/>
-  <UIView app:minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
-    <UILabel ios:name="" app:width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UIPickerView"/>
-    <UIPickerView ios:name="_pickerView" app:width="100" app:height="100" ios:showSelIndicator="true"/>
+  <UIView ios:layout_height="1" ios:layout_marginTop="8" ios:layout_marginBottom="8" ios:bgColor="#f5f5f5"/>
+  <UIView ios:layout_minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
+    <UILabel ios:name="" ios:layout_width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UIPickerView"/>
+    <UIPickerView ios:name="_pickerView" ios:layout_width="100" ios:layout_height="100" ios:showSelIndicator="true"/>
   </UIView>
-  <UIView app:height="1" app:marginTop="8" app:marginBottom="8" ios:bgColor="#f5f5f5"/>
-  <UIView app:minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
-    <UILabel ios:name="" app:width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UIProgressView"/>
-    <UIProgressView ios:name="_progress" app:flex="1" app:margin="10" ios:style="bar" ios:progress="0.5" ios:progressTintColor="red" ios:trackTintColor="green"/>
+  <UIView ios:layout_height="1" ios:layout_marginTop="8" ios:layout_marginBottom="8" ios:bgColor="#f5f5f5"/>
+  <UIView ios:layout_minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
+    <UILabel ios:name="" ios:layout_width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UIProgressView"/>
+    <UIProgressView ios:name="_progress" app:flex="1" ios:layout_margin="10" ios:style="bar" ios:progress="0.5" ios:progressTintColor="red" ios:trackTintColor="green"/>
   </UIView>
-  <UIView app:height="1" app:marginTop="8" app:marginBottom="8" ios:bgColor="#f5f5f5"/>
-  <UIView app:minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
-    <UILabel ios:name="" app:width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UISearchBar"/>
-    <UISearchBar ios:name="_searchBar" app:flex="1" app:margin="10" ios:barStyle="default" ios:text="search bar" ios:placeholder="请输入搜索内容"/>
+  <UIView ios:layout_height="1" ios:layout_marginTop="8" ios:layout_marginBottom="8" ios:bgColor="#f5f5f5"/>
+  <UIView ios:layout_minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
+    <UILabel ios:name="" ios:layout_width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UISearchBar"/>
+    <UISearchBar ios:name="_searchBar" app:flex="1" ios:layout_margin="10" ios:barStyle="default" ios:text="search bar" ios:placeholder="请输入搜索内容"/>
   </UIView>
-  <UIView app:height="1" app:marginTop="8" app:marginBottom="8" ios:bgColor="#f5f5f5"/>
-  <UIView app:minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
-    <UILabel ios:name="" app:width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UISegmentedControl"/>
-    <UISegmentedControl ios:name="_segment" app:flex="1" app:margin="10" ios:selectedIndex="1" ios:tintColor="red"/>
+  <UIView ios:layout_height="1" ios:layout_marginTop="8" ios:layout_marginBottom="8" ios:bgColor="#f5f5f5"/>
+  <UIView ios:layout_minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
+    <UILabel ios:name="" ios:layout_width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UISegmentedControl"/>
+    <UISegmentedControl ios:name="_segment" app:flex="1" ios:layout_margin="10" ios:selectedIndex="1" ios:tintColor="red"/>
   </UIView>
-  <UIView app:height="1" app:marginTop="8" app:marginBottom="8" ios:bgColor="#f5f5f5"/>
-  <UIView app:minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
-    <UILabel ios:name="" app:width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UISlider"/>
-    <UISlider ios:name="_slider" app:flex="1" app:margin="10" ios:minValue="0" ios:maxValue="1" ios:value="0.3" ios:continuous="true" ios:minTintColor="green" ios:maxTintColor="red" ios:thumbTintColor="blue"/>
+  <UIView ios:layout_height="1" ios:layout_marginTop="8" ios:layout_marginBottom="8" ios:bgColor="#f5f5f5"/>
+  <UIView ios:layout_minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
+    <UILabel ios:name="" ios:layout_width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UISlider"/>
+    <UISlider ios:name="_slider" app:flex="1" ios:layout_margin="10" ios:minValue="0" ios:maxValue="1" ios:value="0.3" ios:continuous="true" ios:minTintColor="green" ios:maxTintColor="red" ios:thumbTintColor="blue"/>
   </UIView>
-  <UIView app:height="1" app:marginTop="8" app:marginBottom="8" ios:bgColor="#f5f5f5"/>
-  <UIView app:minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
-    <UILabel ios:name="" app:width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UIStepper"/>
+  <UIView ios:layout_height="1" ios:layout_marginTop="8" ios:layout_marginBottom="8" ios:bgColor="#f5f5f5"/>
+  <UIView ios:layout_minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
+    <UILabel ios:name="" ios:layout_width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UIStepper"/>
     <UIStepper ios:name="_stepper" ios:minValue="0" ios:maxValue="1" ios:value="0.3" ios:stepValue="0.1" ios:wraps="true" ios:tintColor="red"/>
   </UIView>
-  <UIView app:height="1" app:marginTop="8" app:marginBottom="8" ios:bgColor="#f5f5f5"/>
-  <UIView app:minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
-    <UILabel ios:name="" app:width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UISwitch"/>
+  <UIView ios:layout_height="1" ios:layout_marginTop="8" ios:layout_marginBottom="8" ios:bgColor="#f5f5f5"/>
+  <UIView ios:layout_minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
+    <UILabel ios:name="" ios:layout_width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UISwitch"/>
     <UISwitch ios:tintColor="green" ios:on="true"/>
   </UIView>
-  <UIView app:height="1" app:marginTop="8" app:marginBottom="8" ios:bgColor="#f5f5f5"/>
-  <UIView app:minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
-    <UILabel ios:name="" app:width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UITabBar"/>
-    <UITabBar ios:name="_tabBar" app:flex="1" app:height="44" ios:tintColor="green" ios:barTintColor="red" ios:unSelTintColor="blue" ios:itemSpacing="5" ios:itemWidth="50" ios:translucent="true" ios:bgColor="lightGray"/>
+  <UIView ios:layout_height="1" ios:layout_marginTop="8" ios:layout_marginBottom="8" ios:bgColor="#f5f5f5"/>
+  <UIView ios:layout_minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
+    <UILabel ios:name="" ios:layout_width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UITabBar"/>
+    <UITabBar ios:name="_tabBar" app:flex="1" ios:layout_height="44" ios:tintColor="green" ios:barTintColor="red" ios:unSelTintColor="blue" ios:itemSpacing="5" ios:itemWidth="50" ios:translucent="true" ios:bgColor="lightGray"/>
   </UIView>
-  <UIView app:height="1" app:marginTop="8" app:marginBottom="8" ios:bgColor="#f5f5f5"/>
-  <UIView app:minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
-    <UILabel ios:name="" app:width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UIToolbar"/>
-    <UIToolbar ios:name="_toolbar" app:flex="1" app:height="44" ios:barStyle="default" ios:tintColor="red" ios:barTintColor="green" ios:bgColor="lightGray"/>
+  <UIView ios:layout_height="1" ios:layout_marginTop="8" ios:layout_marginBottom="8" ios:bgColor="#f5f5f5"/>
+  <UIView ios:layout_minHeight="44" app:flexDirection="row" app:justifyContent="space-between" app:alignItems="center">
+    <UILabel ios:name="" ios:layout_width="40%" ios:fontSize="14" ios:color="#333333" ios:linesNum="0" ios:text="UIToolbar"/>
+    <UIToolbar ios:name="_toolbar" app:flex="1" ios:layout_height="44" ios:barStyle="default" ios:tintColor="red" ios:barTintColor="green" ios:bgColor="lightGray"/>
   </UIView>
-  <UIView app:height="1" app:marginTop="8" app:marginBottom="8" ios:bgColor="#f5f5f5"/>
+  <UIView ios:layout_height="1" ios:layout_marginTop="8" ios:layout_marginBottom="8" ios:bgColor="#f5f5f5"/>
 </FlexScrollView>

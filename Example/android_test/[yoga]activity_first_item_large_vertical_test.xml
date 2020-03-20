@@ -18,26 +18,37 @@
     android:id="@+id/flexbox_layout"
     android:layout_width="320dp"
     android:layout_height="320dp"
+    ios:layout_width="320"
+    ios:layout_height="320"
     app:flexDirection="column"
     app:flexWrap="wrap"
     app:alignItems="stretch"
     app:alignContent="stretch">
 
     <TextView
+        ios:text="1"
         android:id="@+id/text1"
         android:layout_width="60dp"
         android:layout_height="500dp"
+        ios:layout_width="60"
+        ios:layout_height="500"
         android:text="1" />
 
     <TextView
+        ios:text="2"
         android:id="@+id/text2"
         android:layout_width="60dp"
         android:layout_height="120dp"
+        ios:layout_width="60"
+        ios:layout_height="120"
         android:text="2" />
 
     <TextView
+        ios:text="3"
         android:id="@+id/text3"
         android:layout_width="6dp"
         android:layout_height="300dp"
+        ios:layout_width="6"
+        ios:layout_height="300"
         android:text="3" />
 </com.google.android.flexbox.FlexboxLayout>

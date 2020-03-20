@@ -119,6 +119,36 @@ NSString *iOSClassFromAndroid(NSString *androidClassName) {
     return androidClassName;
 }
 
+BOOL isLayoutParamIniOSNamespace(NSString *iosKey) {
+        if (0 != [iosKey length]) {
+            NSNumber *result = @{
+                @"layout_margin" : @(YES),
+                @"layout_marginStart" : @(YES),
+                @"layout_marginEnd" : @(YES),
+                @"layout_marginTop" : @(YES),
+                @"layout_marginBottom" : @(YES),
+                @"layout_marginLeft" : @(YES),
+                @"layout_marginRight" : @(YES),
+                @"padding" : @(YES),
+                @"paddingStart" : @(YES),
+                @"paddingEnd" : @(YES),
+                @"paddingTop" : @(YES),
+                @"paddingBottom" : @(YES),
+                @"paddingLeft" : @(YES),
+                @"paddingRight" : @(YES),
+                @"layout_width" : @(YES),
+                @"layout_height" : @(YES),
+                @"layout_minWidth" : @(YES),
+                @"layout_maxWidth" : @(YES),
+                @"layout_minHeight" : @(YES),
+                @"layout_maxHeight" : @(YES),
+            }[iosKey];
+            return [result boolValue];
+        }
+        return NO;
+
+}
+
 NSString *iOSFlexKeyFromAndroid(NSString *androidFlexKey) {
     if (0 != [androidFlexKey length]) {
         NSString *result = @{
@@ -127,11 +157,6 @@ NSString *iOSFlexKeyFromAndroid(NSString *androidFlexKey) {
             @"layout_flexShrink" : @"flexShrink",
             @"layout_wrapBefore" : @"wrapBefore",
             @"layout_flexBasisPercent" : @"flexBasis",
-            @"layout_minWidth" : @"minWidth",
-            @"layout_minHeight" : @"minHeight",
-            @"layout_maxWidth" : @"maxWidth",
-            @"layout_maxHeight" : @"maxHeight",
-//            @"layout_order" : @"order",
         }[androidFlexKey];
         if ([result length]) {
             return result;
@@ -143,7 +168,7 @@ NSString *iOSFlexKeyFromAndroid(NSString *androidFlexKey) {
 NSString *iOSFlexValueFromAndroid(NSString *androidFlexValue) {
     if (0 != [androidFlexValue length]) {
         NSString *result = @{
-            @"col_reverse" : @"col-reverse",
+            @"column_reverse" : @"col-reverse",
             @"row_reverse" : @"row-reverse",
             @"flex_start" : @"flex-start",
             @"flex_end" : @"flex-end",
@@ -689,10 +714,14 @@ void FlexApplyLayoutParam(YGLayout* layout,
             FlexAttr* attr = [[FlexAttr alloc] init];
             attr.name = attrName;
             if (isLayout) {
-                attr.value = iOSFlexValueFromAndroid(attrValue);
-                [layoutParams addObject:attr];
+                //xmlns:app
+                if (NO == isLayoutParamIniOSNamespace(attrName)) {
+                    attr.value = iOSFlexValueFromAndroid(attrValue);
+                    [layoutParams addObject:attr];
+                }
             }
             else {
+                //xmlns:ios
                 if ([attrName isEqualToString:@"class"]) {
                     node.viewClassName = attrValue;
                 }
@@ -704,36 +733,16 @@ void FlexApplyLayoutParam(YGLayout* layout,
                 }
                 else {
                     attr.value = attrValue;
-                    [viewAttrs addObject:attr];
+                    if (isLayoutParamIniOSNamespace(attrName)) {
+                        if ([attr.name hasPrefix:@"layout_"]) {
+                            attr.name = [attr.name substringFromIndex:7];
+                        }
+                        [layoutParams addObject:attr];
+                    }
+                    else {
+                        [viewAttrs addObject:attr];
+                    }
                 }
-            }
-        }
-        else if ([namespace isEqualToString:@"android"]) {
-            if ([attrName isEqualToString:@"layout_width"]) {
-                if ([attrValue hasSuffix:@"dp"]) {
-                    FlexAttr* attr = FlexMakeArtr(@"width", [attrValue substringToIndex:[attrValue length] - 2]);
-                    [layoutParams addObject:attr];
-                }
-                else if ([attrValue isEqualToString:@"match_parent"]) {
-                    FlexAttr* attr = FlexMakeArtr(@"width", @"100%");
-                    [layoutParams addObject:attr];
-                }
-                
-            }
-            else if ([attrName isEqualToString:@"layout_height"]) {
-                if ([attrValue hasSuffix:@"dp"]) {
-                    FlexAttr* attr = FlexMakeArtr(@"height", [attrValue substringToIndex:[attrValue length] - 2]);
-                    [layoutParams addObject:attr];
-                }
-                else if ([attrValue isEqualToString:@"match_parent"]) {
-                    FlexAttr* attr = FlexMakeArtr(@"height", @"100%");
-                    [layoutParams addObject:attr];
-                }
-
-            }
-            else if ([attrName isEqualToString:@"background"]) {
-                FlexAttr* attr = FlexMakeArtr(attrName, attrValue);
-                [viewAttrs addObject:attr];
             }
         }
     }];

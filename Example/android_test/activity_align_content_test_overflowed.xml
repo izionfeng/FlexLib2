@@ -20,7 +20,8 @@
     android:id="@+id/flexbox_layout"
     android:layout_width="320dp"
     android:layout_height="320dp"
-    
+    ios:layout_width="320"
+    ios:layout_height="320"
     app:flexDirection="row"
     app:flexWrap="wrap_reverse"
     app:alignContent="stretch">
@@ -28,16 +29,18 @@
     <TextView
         
         ios:text="1"
-        
         android:id="@+id/text1"
         android:layout_width="120dp"
         android:layout_height="120dp"
+        ios:layout_width="120dp"
+        ios:layout_height="120dp"
         android:text="1" />
 
     <TextView
         ios:class="UILabel"
         ios:text="2"
-        
+        ios:layout_width="120"
+        ios:layout_height="120"
         android:id="@+id/text2"
         android:layout_width="120dp"
         android:layout_height="120dp"
@@ -46,7 +49,8 @@
     <TextView
         ios:class="UILabel"
         ios:text="3"
-        
+        ios:layout_width="120"
+        ios:layout_height="120"
         android:id="@+id/text3"
         android:layout_width="120dp"
         android:layout_height="120dp"
@@ -55,7 +59,8 @@
     <TextView
         ios:class="UILabel"
         ios:text="4"
-        
+        ios:layout_width="120"
+        ios:layout_height="120"
         android:id="@+id/text4"
         android:layout_width="120dp"
         android:layout_height="120dp"
@@ -64,7 +69,8 @@
     <TextView
         ios:class="UILabel"
         ios:text="5"
-        
+        ios:layout_width="120"
+        ios:layout_height="120"
         android:id="@+id/text5"
         android:layout_width="120dp"
         android:layout_height="120dp"
@@ -73,7 +79,8 @@
     <TextView
         ios:class="UILabel"
         ios:text="6"
-        
+        ios:layout_width="120"
+        ios:layout_height="120"
         android:id="@+id/text6"
         android:layout_width="120dp"
         android:layout_height="120dp"

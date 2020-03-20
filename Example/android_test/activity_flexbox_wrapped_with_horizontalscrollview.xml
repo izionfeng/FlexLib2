@@ -18,6 +18,8 @@
      the situation MeasureSpec.UNSPECIFIED is set as height mode -->
 <HorizontalScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ios="https://github.com/zionfong/FlexLib2.git"
+    ios:layout_width="100%"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -26,6 +28,7 @@
         android:id="@+id/flexbox_layout"
         android:layout_width="wrap_content"
         android:layout_height="400dp"
+        ios:layout_height="400"
         app:flexDirection="column"
         app:flexWrap="wrap">
 
@@ -33,21 +36,27 @@
             ios:text= "1"
             android:id="@+id/text1"
             android:layout_width="300dp"
-            app:height="100%"
+            android:layout_height="match_parent"
+            ios:layout_width="300"
+            ios:layout_height="100%"
             android:text="1" />
 
         <TextView
             ios:text= "2"
             android:id="@+id/text2"
+            android:layout_height="match_parent"
             android:layout_width="300dp"
-            app:height="100%"
+            ios:layout_height="100%"
+            ios:layout_width="300"
             android:text="2" />
 
         <TextView
             ios:text= "3"
             android:id="@+id/text3"
+            android:layout_height="match_parent"
             android:layout_width="300dp"
-            app:height="100%"
+            ios:layout_height="100%"
+            ios:layout_width="300dp"
             android:text="3" />
     </com.google.android.flexbox.FlexboxLayout>
 </HorizontalScrollView>

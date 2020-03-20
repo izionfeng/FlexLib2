@@ -20,6 +20,8 @@
     android:id="@+id/flexbox_layout"
     android:layout_width="320dp"
     android:layout_height="320dp"
+    ios:layout_width="320"
+    ios:layout_height="320"
     app:flexDirection="row"
     app:flexWrap="wrap"
     app:alignContent="stretch">
@@ -27,6 +29,8 @@
     <TextView
         ios:text="ios_1"
         ios:class="UILabel"
+        ios:layout_width="120"
+        ios:layout_height="120"
         
         android:id="@+id/text1"
         android:layout_width="120dp"
@@ -36,8 +40,10 @@
     <TextView
         ios:text="ios_2"
         ios:class="UILabel"
-        android:id="@+id/text2"
+        ios:layout_width="120"
+        ios:layout_height="120"
         
+        android:id="@+id/text2"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:text="2" />
@@ -45,6 +51,8 @@
     <TextView
         ios:text="ios_3"
         ios:class="UILabel"
+        ios:layout_width="120"
+        ios:layout_height="120"
 
         android:id="@+id/text3"
         android:layout_width="120dp"
