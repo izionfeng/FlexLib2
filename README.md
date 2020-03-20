@@ -44,10 +44,8 @@ pod 'FlexLib2'
 | alignContent             | flex\_start/flex\_end/center/space\_between/space\_around/stretch |
 | layout\_alignSelf        | auto/flex\_start/flex\_end/center/baseline/stretch                |
 | justifyContent           | flex\_start/flex\_end/center/space\_between/spce\_around          |
-| layout\_flexBasisPercent | float num value                                                   |
-| layout\_flexGrow         | float num value                                                   |
-| layout\_flexShrink       | float num value                                                   |
-|                          |                                                                   |
+
+这几个属性iOS端的yoga不支持：layout_flexBasisPercent，layout_flexGrow，layout_flexShrink
 
 ## 宽/高/margin/padding
 
